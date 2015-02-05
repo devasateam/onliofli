@@ -1,7 +1,7 @@
-upsell
+API
 ======
 
-Upsell module , to help promote products on checkout.
+
 
 Scala Version 2.11.1
 
