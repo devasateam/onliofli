@@ -8,7 +8,7 @@ GET         /                                   controllers.BaseApiController.in
 #Products
 GET          /api/products						controllers.ProductController.getProducts()
 GET          /api/products/:sku					controllers.ProductController.getProductBySku(sku: String)
-POST			 /api/products/						controllers.ProductController.createProduct()
+POST			 /api/products						controllers.ProductController.createProduct()
 DELETE 		 /api/products/:sku					controllers.ProductController.deleteProduct(sku: String)
 
 # Map static resources from the /public folder to the /assets URL path

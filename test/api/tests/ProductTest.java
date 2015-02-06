@@ -15,6 +15,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import models.Product;
 
@@ -61,7 +62,19 @@ public class ProductTest {
 		Helpers.stop( fp);
 	}
 
+	@Test
+	public void testAddProduct() throws JsonParseException,
+			JsonMappingException, IOException {
+		String sku = UUID.randomUUID().toString();
+		String body = "{\"sku\":\""+sku+"\", \"itemDesc\":\"something\"}";
+		JsonNode node = Json.parse(body);
+		FakeRequest request = new FakeRequest(POST, "/api/products")
+				.withJsonBody(node);
 	
+		Result result = route(request);
+		assertThat(status(result)).isEqualTo(Http.Status.OK);
+		
+	}
 
 	
 	

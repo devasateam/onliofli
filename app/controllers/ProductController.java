@@ -32,6 +32,21 @@ public class ProductController extends BaseApiController{
 		return jsonResponse("success");
 	}
 	
+	public static Result modifyProduct(String sku){
+		Logger.info("Modify product");
+
+		Form<Product> pForm = Form.form(Product.class)
+				.bindFromRequest();
+		if (pForm.hasErrors()) {
+			return badRequest("Invalid json data "
+					+ pForm.errorsAsJson().toString());
+		}
+		Product p = pForm.get();
+		Product findBySku = Product.findBySku(sku);
+		findBySku.map(p);
+		Product.update(findBySku);
+		return jsonResponse("success");
+	}
 	public static Result deleteProduct(String sku){
 		Logger.info("Deleting product by sku");
 

@@ -8,6 +8,7 @@ import net.vz.mongodb.jackson.JacksonDBCollection;
 import net.vz.mongodb.jackson.Id;
 import net.vz.mongodb.jackson.ObjectId;
 
+import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.annotate.JsonProperty;
 
 import com.mongodb.BasicDBObject;
@@ -18,12 +19,14 @@ public class Product {
 
 	@Id
 	@ObjectId
-	public String id;
+	private String id;
 
 	@Required
-	public String sku;
+	private String sku;
 
-	public String itemDesc;
+	
+
+	private String itemDesc;
 
 	private static JacksonDBCollection<Product, String> coll = MongoDB
 			.getCollection("Products", Product.class, String.class);
@@ -36,6 +39,30 @@ public class Product {
 		this.sku = sku;
 	}
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getSku() {
+		return sku;
+	}
+
+	public void setSku(String sku) {
+		this.sku = sku;
+	}
+
+	public String getItemDesc() {
+		return itemDesc;
+	}
+
+	public void setItemDesc(String itemDesc) {
+		this.itemDesc = itemDesc;
+	}
+	
 	public static List<Product> all() {
 		return Product.coll.find().toArray();
 	}
@@ -45,14 +72,17 @@ public class Product {
 				"sku", sku));
 	}
 
-	public static void create(Product Product) {
-		Product.coll.save(Product);
+	public static void create(Product product) {
+		Product.coll.save(product);
+	
+	}
+	
+	public static void update(Product product){
+		if(!StringUtils.isEmpty(product.id))
+			Product.coll.save(product);
 	}
 
-	public static void create(String label) {
-		create(new Product(label));
-	}
-
+	
 	public static void delete(String id) {
 		Product product = Product.coll.findOneById(id);
 		if (product != null)
@@ -63,6 +93,11 @@ public class Product {
 		Product product = findBySku(sku);
 		if (product != null)
 			Product.coll.remove(product);
+	}
+
+	public void map(Product p) {
+		this.itemDesc=p.itemDesc;
+		
 	}
 
 	
