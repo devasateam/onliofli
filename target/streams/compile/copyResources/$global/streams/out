@@ -1,0 +1,11 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/routes,/home/samir/personal/api/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/application.prod.conf,/home/samir/personal/api/target/scala-2.11/classes/application.prod.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/messages.fr,/home/samir/personal/api/target/scala-2.11/classes/messages.fr)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/play.plugins,/home/samir/personal/api/target/scala-2.11/classes/play.plugins)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/messages.en,/home/samir/personal/api/target/scala-2.11/classes/messages.en)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/mail.conf.example,/home/samir/personal/api/target/scala-2.11/classes/mail.conf.example)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/application.alpha.conf,/home/samir/personal/api/target/scala-2.11/classes/application.alpha.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/cloudbees.conf,/home/samir/personal/api/target/scala-2.11/classes/cloudbees.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/application.test.conf,/home/samir/personal/api/target/scala-2.11/classes/application.test.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/samir/personal/api/conf/application.conf,/home/samir/personal/api/target/scala-2.11/classes/application.conf)[0m
