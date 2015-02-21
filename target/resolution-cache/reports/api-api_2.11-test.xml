@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
-		date="20150220034202"/>
+		date="20150222004929"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="filters-helpers_2.11">
 			<revision name="2.3.7" status="release" pubdate="20150219104557" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="74">
@@ -890,7 +890,7 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="1.1.1" status="release" pubdate="20150217120856" resolver="sbt-chain" artresolver="sbt-chain" evicted="transitive" evicted-reason="" downloaded="false" searched="false" default="true" conf="default, master(*), compile(*), runtime(*)" position="-1">
+			<revision name="1.1.1" status="release" pubdate="20150220162326" resolver="sbt-chain" artresolver="sbt-chain" evicted="transitive" evicted-reason="" downloaded="false" searched="false" default="true" conf="default, master(*), compile(*), runtime(*)" position="-1">
 				<metadata-artifact status="no" details="" size="423" time="0" location="/home/samir/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.0.1"/>
 				<artifacts>
@@ -1167,7 +1167,7 @@
 			</revision>
 		</module>
 		<module organisation="dom4j" name="dom4j">
-			<revision name="1.6.1" status="release" pubdate="20150217120856" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="true" conf="default, master(*), compile(*), runtime(*)" position="45">
+			<revision name="1.6.1" status="release" pubdate="20150220162326" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="true" conf="default, master(*), compile(*), runtime(*)" position="45">
 				<metadata-artifact status="no" details="" size="393" time="0" location="/home/samir/.ivy2/cache/dom4j/dom4j/ivy-1.6.1.xml" searched="false" origin-is-local="false" origin-location="UNKNOWN"/>
 				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.9.8"/>
 				<artifacts>

@@ -19,6 +19,10 @@ POST    /settings/email             controllers.account.settings.Email.runEmail(
 GET     /signup                     controllers.account.Signup.create()
 POST    /signup                     controllers.account.Signup.save()
 
+# Registers the user, using Login signUp.
+
+#POST    /signup/gp/                     controllers.account.Signup.save(String :)
+
 # Accessed when the user confirms the registration.
 GET     /confirm/:confirmToken      controllers.account.Signup.confirm(confirmToken:String)
 
@@ -35,3 +39,8 @@ GET     /email/:token               controllers.account.settings.Email.validateE
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
+#############Ui Integ#####################
+
+GET     /api/login								 controllers.account.Signup.loginAjax()
+
+POST     /api/signup				 controllers.account.Signup.signAjaxUp(signupData:String)

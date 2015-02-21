@@ -1,6 +1,6 @@
 // @SOURCE:/home/samir/personal/api/conf/routes
-// @HASH:84a1052259a5a1db25f5fd22e79fd0b24d013385
-// @DATE:Fri Feb 20 04:02:52 IST 2015
+// @HASH:71d65eee2d58e8eabf1de679c972a46b04d06049
+// @DATE:Sun Feb 22 02:58:35 IST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,18 +15,18 @@ import _root_.play.libs.F
 import Router.queryString
 
 
-// @LINE:36
+// @LINE:40
 // @LINE:10
 // @LINE:9
 // @LINE:7
 // @LINE:6
 package controllers {
 
-// @LINE:36
+// @LINE:40
 class ReverseAssets {
 
 
-// @LINE:36
+// @LINE:40
 def at(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -82,7 +82,7 @@ def authenticate(): Call = {
 }
                   
 
-// @LINE:33
+// @LINE:37
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -90,13 +90,13 @@ def authenticate(): Call = {
 // @LINE:12
 package controllers.account.settings {
 
-// @LINE:33
+// @LINE:37
 // @LINE:16
 // @LINE:15
 class ReverseEmail {
 
 
-// @LINE:33
+// @LINE:37
 def validateEmail(token:String): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "email/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
@@ -158,22 +158,40 @@ def index(): Call = {
 }
                   
 
+// @LINE:46
+// @LINE:44
+// @LINE:35
+// @LINE:34
 // @LINE:31
 // @LINE:30
 // @LINE:27
-// @LINE:26
-// @LINE:23
 // @LINE:20
 // @LINE:19
 package controllers.account {
 
-// @LINE:23
+// @LINE:46
+// @LINE:44
+// @LINE:27
 // @LINE:20
 // @LINE:19
 class ReverseSignup {
 
 
-// @LINE:23
+// @LINE:46
+def signAjaxUp(signupData:String): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "api/signup" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("signupData", signupData)))))
+}
+                        
+
+// @LINE:19
+def create(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "signup")
+}
+                        
+
+// @LINE:27
 def confirm(confirmToken:String): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "confirm/" + implicitly[PathBindable[String]].unbind("confirmToken", dynamicString(confirmToken)))
@@ -187,45 +205,45 @@ def save(): Call = {
 }
                         
 
-// @LINE:19
-def create(): Call = {
+// @LINE:44
+def loginAjax(): Call = {
    import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "signup")
+   Call("GET", _prefix + { _defaultPrefix } + "api/login")
 }
                         
 
 }
                           
 
+// @LINE:35
+// @LINE:34
 // @LINE:31
 // @LINE:30
-// @LINE:27
-// @LINE:26
 class ReverseReset {
 
 
-// @LINE:31
+// @LINE:35
 def runReset(token:String): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "reset/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
 }
                         
 
-// @LINE:26
+// @LINE:30
 def ask(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "reset/ask")
 }
                         
 
-// @LINE:30
+// @LINE:34
 def reset(token:String): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "reset/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
 }
                         
 
-// @LINE:27
+// @LINE:31
 def runAsk(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "reset/ask")
@@ -238,7 +256,7 @@ def runAsk(): Call = {
                   
 
 
-// @LINE:36
+// @LINE:40
 // @LINE:10
 // @LINE:9
 // @LINE:7
@@ -246,11 +264,11 @@ def runAsk(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:36
+// @LINE:40
 class ReverseAssets {
 
 
-// @LINE:36
+// @LINE:40
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -326,7 +344,7 @@ def authenticate : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
-// @LINE:33
+// @LINE:37
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -335,13 +353,13 @@ def authenticate : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.account.settings.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:33
+// @LINE:37
 // @LINE:16
 // @LINE:15
 class ReverseEmail {
 
 
-// @LINE:33
+// @LINE:37
 def validateEmail : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.account.settings.Email.validateEmail",
    """
@@ -427,23 +445,49 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
+// @LINE:46
+// @LINE:44
+// @LINE:35
+// @LINE:34
 // @LINE:31
 // @LINE:30
 // @LINE:27
-// @LINE:26
-// @LINE:23
 // @LINE:20
 // @LINE:19
 package controllers.account.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:23
+// @LINE:46
+// @LINE:44
+// @LINE:27
 // @LINE:20
 // @LINE:19
 class ReverseSignup {
 
 
-// @LINE:23
+// @LINE:46
+def signAjaxUp : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.account.Signup.signAjaxUp",
+   """
+      function(signupData) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "api/signup" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("signupData", signupData)])})
+      }
+   """
+)
+                        
+
+// @LINE:19
+def create : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.account.Signup.create",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signup"})
+      }
+   """
+)
+                        
+
+// @LINE:27
 def confirm : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.account.Signup.confirm",
    """
@@ -465,12 +509,12 @@ def save : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:19
-def create : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.account.Signup.create",
+// @LINE:44
+def loginAjax : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.account.Signup.loginAjax",
    """
       function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signup"})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/login"})
       }
    """
 )
@@ -479,14 +523,14 @@ def create : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:35
+// @LINE:34
 // @LINE:31
 // @LINE:30
-// @LINE:27
-// @LINE:26
 class ReverseReset {
 
 
-// @LINE:31
+// @LINE:35
 def runReset : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.account.Reset.runReset",
    """
@@ -497,7 +541,7 @@ def runReset : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:26
+// @LINE:30
 def ask : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.account.Reset.ask",
    """
@@ -508,7 +552,7 @@ def ask : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:30
+// @LINE:34
 def reset : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.account.Reset.reset",
    """
@@ -519,7 +563,7 @@ def reset : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:27
+// @LINE:31
 def runAsk : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.account.Reset.runAsk",
    """
@@ -536,7 +580,7 @@ def runAsk : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:36
+// @LINE:40
 // @LINE:10
 // @LINE:9
 // @LINE:7
@@ -544,11 +588,11 @@ def runAsk : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:36
+// @LINE:40
 class ReverseAssets {
 
 
-// @LINE:36
+// @LINE:40
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -599,7 +643,7 @@ def authenticate(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
         
 
-// @LINE:33
+// @LINE:37
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -608,13 +652,13 @@ def authenticate(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 package controllers.account.settings.ref {
 
 
-// @LINE:33
+// @LINE:37
 // @LINE:16
 // @LINE:15
 class ReverseEmail {
 
 
-// @LINE:33
+// @LINE:37
 def validateEmail(token:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.account.settings.Email.validateEmail(token), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.settings.Email", "validateEmail", Seq(classOf[String]), "GET", """""", _prefix + """email/$token<[^/]+>""")
 )
@@ -670,23 +714,39 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
         
 
+// @LINE:46
+// @LINE:44
+// @LINE:35
+// @LINE:34
 // @LINE:31
 // @LINE:30
 // @LINE:27
-// @LINE:26
-// @LINE:23
 // @LINE:20
 // @LINE:19
 package controllers.account.ref {
 
 
-// @LINE:23
+// @LINE:46
+// @LINE:44
+// @LINE:27
 // @LINE:20
 // @LINE:19
 class ReverseSignup {
 
 
-// @LINE:23
+// @LINE:46
+def signAjaxUp(signupData:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.account.Signup.signAjaxUp(signupData), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "signAjaxUp", Seq(classOf[String]), "POST", """""", _prefix + """api/signup""")
+)
+                      
+
+// @LINE:19
+def create(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.account.Signup.create(), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "create", Seq(), "GET", """ Registers the user, sending an email to confirm the account.""", _prefix + """signup""")
+)
+                      
+
+// @LINE:27
 def confirm(confirmToken:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.account.Signup.confirm(confirmToken), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "confirm", Seq(classOf[String]), "GET", """ Accessed when the user confirms the registration.""", _prefix + """confirm/$confirmToken<[^/]+>""")
 )
@@ -698,41 +758,41 @@ def save(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:19
-def create(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.account.Signup.create(), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "create", Seq(), "GET", """ Registers the user, sending an email to confirm the account.""", _prefix + """signup""")
+// @LINE:44
+def loginAjax(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.account.Signup.loginAjax(), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "loginAjax", Seq(), "GET", """""", _prefix + """api/login""")
 )
                       
 
 }
                           
 
+// @LINE:35
+// @LINE:34
 // @LINE:31
 // @LINE:30
-// @LINE:27
-// @LINE:26
 class ReverseReset {
 
 
-// @LINE:31
+// @LINE:35
 def runReset(token:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.account.Reset.runReset(token), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Reset", "runReset", Seq(classOf[String]), "POST", """""", _prefix + """reset/$token<[^/]+>""")
 )
                       
 
-// @LINE:26
+// @LINE:30
 def ask(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.account.Reset.ask(), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Reset", "ask", Seq(), "GET", """ Displays a page to send a reset email given the user's email.""", _prefix + """reset/ask""")
 )
                       
 
-// @LINE:30
+// @LINE:34
 def reset(token:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.account.Reset.reset(token), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Reset", "reset", Seq(classOf[String]), "GET", """ Resets the password using the password.""", _prefix + """reset/$token<[^/]+>""")
 )
                       
 
-// @LINE:27
+// @LINE:31
 def runAsk(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.account.Reset.runAsk(), HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Reset", "runAsk", Seq(), "POST", """""", _prefix + """reset/ask""")
 )

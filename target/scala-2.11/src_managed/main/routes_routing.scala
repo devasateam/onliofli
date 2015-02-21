@@ -1,6 +1,6 @@
 // @SOURCE:/home/samir/personal/api/conf/routes
-// @HASH:84a1052259a5a1db25f5fd22e79fd0b24d013385
-// @DATE:Fri Feb 20 04:02:52 IST 2015
+// @HASH:71d65eee2d58e8eabf1de679c972a46b04d06049
+// @DATE:Sun Feb 22 02:58:35 IST 2015
 
 
 import play.core._
@@ -109,55 +109,69 @@ controllers.account.Signup.save(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "save", Nil,"POST", """""", Routes.prefix + """signup"""))
         
 
-// @LINE:23
+// @LINE:27
 private[this] lazy val controllers_account_Signup_confirm11_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("confirm/"),DynamicPart("confirmToken", """[^/]+""",true))))
 private[this] lazy val controllers_account_Signup_confirm11_invoker = createInvoker(
 controllers.account.Signup.confirm(fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "confirm", Seq(classOf[String]),"GET", """ Accessed when the user confirms the registration.""", Routes.prefix + """confirm/$confirmToken<[^/]+>"""))
         
 
-// @LINE:26
+// @LINE:30
 private[this] lazy val controllers_account_Reset_ask12_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("reset/ask"))))
 private[this] lazy val controllers_account_Reset_ask12_invoker = createInvoker(
 controllers.account.Reset.ask(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Reset", "ask", Nil,"GET", """ Displays a page to send a reset email given the user's email.""", Routes.prefix + """reset/ask"""))
         
 
-// @LINE:27
+// @LINE:31
 private[this] lazy val controllers_account_Reset_runAsk13_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("reset/ask"))))
 private[this] lazy val controllers_account_Reset_runAsk13_invoker = createInvoker(
 controllers.account.Reset.runAsk(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Reset", "runAsk", Nil,"POST", """""", Routes.prefix + """reset/ask"""))
         
 
-// @LINE:30
+// @LINE:34
 private[this] lazy val controllers_account_Reset_reset14_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("reset/"),DynamicPart("token", """[^/]+""",true))))
 private[this] lazy val controllers_account_Reset_reset14_invoker = createInvoker(
 controllers.account.Reset.reset(fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Reset", "reset", Seq(classOf[String]),"GET", """ Resets the password using the password.""", Routes.prefix + """reset/$token<[^/]+>"""))
         
 
-// @LINE:31
+// @LINE:35
 private[this] lazy val controllers_account_Reset_runReset15_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("reset/"),DynamicPart("token", """[^/]+""",true))))
 private[this] lazy val controllers_account_Reset_runReset15_invoker = createInvoker(
 controllers.account.Reset.runReset(fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Reset", "runReset", Seq(classOf[String]),"POST", """""", Routes.prefix + """reset/$token<[^/]+>"""))
         
 
-// @LINE:33
+// @LINE:37
 private[this] lazy val controllers_account_settings_Email_validateEmail16_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("email/"),DynamicPart("token", """[^/]+""",true))))
 private[this] lazy val controllers_account_settings_Email_validateEmail16_invoker = createInvoker(
 controllers.account.settings.Email.validateEmail(fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.account.settings.Email", "validateEmail", Seq(classOf[String]),"GET", """""", Routes.prefix + """email/$token<[^/]+>"""))
         
 
-// @LINE:36
+// @LINE:40
 private[this] lazy val controllers_Assets_at17_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
 private[this] lazy val controllers_Assets_at17_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dashboard""","""controllers.Dashboard.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.authenticate()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.Application.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.account.settings.Index.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings/password""","""controllers.account.settings.Password.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings/password""","""controllers.account.settings.Password.runPassword()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings/email""","""controllers.account.settings.Email.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings/email""","""controllers.account.settings.Email.runEmail()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signup""","""controllers.account.Signup.create()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signup""","""controllers.account.Signup.save()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """confirm/$confirmToken<[^/]+>""","""controllers.account.Signup.confirm(confirmToken:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """reset/ask""","""controllers.account.Reset.ask()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """reset/ask""","""controllers.account.Reset.runAsk()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """reset/$token<[^/]+>""","""controllers.account.Reset.reset(token:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """reset/$token<[^/]+>""","""controllers.account.Reset.runReset(token:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """email/$token<[^/]+>""","""controllers.account.settings.Email.validateEmail(token:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:44
+private[this] lazy val controllers_account_Signup_loginAjax18_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("api/login"))))
+private[this] lazy val controllers_account_Signup_loginAjax18_invoker = createInvoker(
+controllers.account.Signup.loginAjax(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "loginAjax", Nil,"GET", """""", Routes.prefix + """api/login"""))
+        
+
+// @LINE:46
+private[this] lazy val controllers_account_Signup_signAjaxUp19_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("api/signup"))))
+private[this] lazy val controllers_account_Signup_signAjaxUp19_invoker = createInvoker(
+controllers.account.Signup.signAjaxUp(fakeValue[String]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.account.Signup", "signAjaxUp", Seq(classOf[String]),"POST", """""", Routes.prefix + """api/signup"""))
+        
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dashboard""","""controllers.Dashboard.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.authenticate()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.Application.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.account.settings.Index.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings/password""","""controllers.account.settings.Password.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings/password""","""controllers.account.settings.Password.runPassword()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings/email""","""controllers.account.settings.Email.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings/email""","""controllers.account.settings.Email.runEmail()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signup""","""controllers.account.Signup.create()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signup""","""controllers.account.Signup.save()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """confirm/$confirmToken<[^/]+>""","""controllers.account.Signup.confirm(confirmToken:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """reset/ask""","""controllers.account.Reset.ask()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """reset/ask""","""controllers.account.Reset.runAsk()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """reset/$token<[^/]+>""","""controllers.account.Reset.reset(token:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """reset/$token<[^/]+>""","""controllers.account.Reset.runReset(token:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """email/$token<[^/]+>""","""controllers.account.settings.Email.validateEmail(token:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """api/login""","""controllers.account.Signup.loginAjax()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """api/signup""","""controllers.account.Signup.signAjaxUp(signupData:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -253,7 +267,7 @@ case controllers_account_Signup_save10_route(params) => {
 }
         
 
-// @LINE:23
+// @LINE:27
 case controllers_account_Signup_confirm11_route(params) => {
    call(params.fromPath[String]("confirmToken", None)) { (confirmToken) =>
         controllers_account_Signup_confirm11_invoker.call(controllers.account.Signup.confirm(confirmToken))
@@ -261,7 +275,7 @@ case controllers_account_Signup_confirm11_route(params) => {
 }
         
 
-// @LINE:26
+// @LINE:30
 case controllers_account_Reset_ask12_route(params) => {
    call { 
         controllers_account_Reset_ask12_invoker.call(controllers.account.Reset.ask())
@@ -269,7 +283,7 @@ case controllers_account_Reset_ask12_route(params) => {
 }
         
 
-// @LINE:27
+// @LINE:31
 case controllers_account_Reset_runAsk13_route(params) => {
    call { 
         controllers_account_Reset_runAsk13_invoker.call(controllers.account.Reset.runAsk())
@@ -277,7 +291,7 @@ case controllers_account_Reset_runAsk13_route(params) => {
 }
         
 
-// @LINE:30
+// @LINE:34
 case controllers_account_Reset_reset14_route(params) => {
    call(params.fromPath[String]("token", None)) { (token) =>
         controllers_account_Reset_reset14_invoker.call(controllers.account.Reset.reset(token))
@@ -285,7 +299,7 @@ case controllers_account_Reset_reset14_route(params) => {
 }
         
 
-// @LINE:31
+// @LINE:35
 case controllers_account_Reset_runReset15_route(params) => {
    call(params.fromPath[String]("token", None)) { (token) =>
         controllers_account_Reset_runReset15_invoker.call(controllers.account.Reset.runReset(token))
@@ -293,7 +307,7 @@ case controllers_account_Reset_runReset15_route(params) => {
 }
         
 
-// @LINE:33
+// @LINE:37
 case controllers_account_settings_Email_validateEmail16_route(params) => {
    call(params.fromPath[String]("token", None)) { (token) =>
         controllers_account_settings_Email_validateEmail16_invoker.call(controllers.account.settings.Email.validateEmail(token))
@@ -301,10 +315,26 @@ case controllers_account_settings_Email_validateEmail16_route(params) => {
 }
         
 
-// @LINE:36
+// @LINE:40
 case controllers_Assets_at17_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
         controllers_Assets_at17_invoker.call(controllers.Assets.at(path, file))
+   }
+}
+        
+
+// @LINE:44
+case controllers_account_Signup_loginAjax18_route(params) => {
+   call { 
+        controllers_account_Signup_loginAjax18_invoker.call(controllers.account.Signup.loginAjax())
+   }
+}
+        
+
+// @LINE:46
+case controllers_account_Signup_signAjaxUp19_route(params) => {
+   call(params.fromQuery[String]("signupData", None)) { (signupData) =>
+        controllers_account_Signup_signAjaxUp19_invoker.call(controllers.account.Signup.signAjaxUp(signupData))
    }
 }
         

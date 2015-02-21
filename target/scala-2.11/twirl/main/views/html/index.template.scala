@@ -44,12 +44,14 @@ Seq[Any](format.raw/*1.78*/("""
     <div class="well">
       """),_display_(/*15.8*/login(loginForm)),format.raw/*15.24*/("""
     """),format.raw/*16.5*/("""</div>
-
     <div class="well">
-      """),_display_(/*19.8*/account/*19.15*/.signup.createFormOnly(signupForm)),format.raw/*19.49*/("""
-    """),format.raw/*20.5*/("""</div>
+      """),_display_(/*18.8*/account/*18.15*/.signup.createFormOnly(signupForm)),format.raw/*18.49*/("""
+    """),format.raw/*19.5*/("""</div>
   </div>
-""")))}))}
+""")))}),format.raw/*21.2*/("""
+
+
+"""))}
   }
 
   def render(signupForm:Form[Application.Register],loginForm:Form[Application.Login]): play.twirl.api.HtmlFormat.Appendable = apply(signupForm,loginForm)
@@ -61,11 +63,11 @@ Seq[Any](format.raw/*1.78*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 20 04:02:53 IST 2015
+                  DATE: Sun Feb 22 00:49:31 IST 2015
                   SOURCE: /home/samir/personal/api/app/views/index.scala.html
-                  HASH: 5e3e2385781c21edc1097cb2d8d50d52d7b1822f
-                  MATRIX: 767->1|914->80|928->87|1008->91|1039->96|1079->110|1093->116|1150->153|1225->77|1253->189|1281->192|1308->211|1347->213|1377->218|1405->226|1435->229|1549->317|1586->333|1618->338|1682->376|1698->383|1753->417|1785->422
-                  LINES: 26->1|28->3|28->3|30->3|31->4|31->4|31->4|31->4|33->1|35->5|37->7|37->7|37->7|39->9|39->9|40->10|45->15|45->15|46->16|49->19|49->19|49->19|50->20
+                  HASH: b549964e2e6097ea9489eaaa0bd849d0d922310f
+                  MATRIX: 767->1|914->80|928->87|1008->91|1039->96|1079->110|1093->116|1150->153|1225->77|1253->189|1281->192|1308->211|1347->213|1377->218|1405->226|1435->229|1549->317|1586->333|1618->338|1681->375|1697->382|1752->416|1784->421|1831->438
+                  LINES: 26->1|28->3|28->3|30->3|31->4|31->4|31->4|31->4|33->1|35->5|37->7|37->7|37->7|39->9|39->9|40->10|45->15|45->15|46->16|48->18|48->18|48->18|49->19|51->21
                   -- GENERATED --
               */
           

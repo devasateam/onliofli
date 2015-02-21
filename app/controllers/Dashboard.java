@@ -11,6 +11,6 @@ import play.mvc.Security;
 public class Dashboard extends Controller {
 
     public static Result index() {
-    	return ok("");
+    	return ok("i am dash board!!!");
     }
 }

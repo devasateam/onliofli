@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.73*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 20 04:02:53 IST 2015
+                  DATE: Sun Feb 22 00:49:31 IST 2015
                   SOURCE: /home/samir/personal/api/app/views/account/settings/email.scala.html
                   HASH: c5133804917d081d3db87c9d3151313ca94b1611
                   MATRIX: 787->1|961->72|989->91|1016->93|1035->104|1074->106|1106->113|1160->147|1192->154|1220->162|1253->169|1320->227|1360->229|1397->239|1444->259|1628->422|1664->431|1804->544|1845->564|1898->587

@@ -57,7 +57,7 @@ Seq[Any](format.raw/*1.29*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 20 04:02:53 IST 2015
+                  DATE: Sun Feb 22 00:49:31 IST 2015
                   SOURCE: /home/samir/personal/api/app/views/account/settings/index.scala.html
                   HASH: facbdf6e086da00dea7918edc815a5bdd1c8ebcc
                   MATRIX: 743->1|858->28|886->31|904->41|943->43|975->49|1156->204|1175->215|1234->254|1263->257|1304->277|1409->355|1429->366|1486->402|1516->405|1554->422|1685->526|1713->533|1749->542

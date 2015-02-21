@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for api#api_2.11;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies api#api_2.11;1.0->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f984ec6[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f2f0484[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
@@ -9941,7 +9941,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.7!trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7676ms :: artifacts dl 199ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8910ms :: artifacts dl 203ms[0m
 [0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 compile produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 runtime produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 test produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-test.xml[0m
@@ -9959,5 +9959,5 @@
 [0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-trace-test produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-echo-trace-test.xml[0m
 [0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-weave produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-echo-weave.xml[0m
 [0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-sigar produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (7676ms resolve - 199ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (8910ms resolve - 203ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

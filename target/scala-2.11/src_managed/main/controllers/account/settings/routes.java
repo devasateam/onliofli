@@ -1,6 +1,6 @@
 // @SOURCE:/home/samir/personal/api/conf/routes
-// @HASH:84a1052259a5a1db25f5fd22e79fd0b24d013385
-// @DATE:Fri Feb 20 04:02:52 IST 2015
+// @HASH:71d65eee2d58e8eabf1de679c972a46b04d06049
+// @DATE:Sun Feb 22 02:58:35 IST 2015
 
 package controllers.account.settings;
 
