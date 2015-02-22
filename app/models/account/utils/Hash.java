@@ -2,8 +2,6 @@ package models.account.utils;
 
 import org.mindrot.jbcrypt.BCrypt;
 
-import java.util.UUID;
-
 /**
  * Password utility class.  This handles password encryption and validation.
  * <p/>

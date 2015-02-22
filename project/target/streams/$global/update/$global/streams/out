@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/samir/personal/api/project/}api-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/F:/project/practise/marketplace-play/api/project/}api-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#api-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -83,12 +83,13 @@
 [0m[[0minfo[0m] [0mResolving commons-io#commons-io;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-io#commons-io;2.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-io#commons-io;2.0.1[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: found revision in cache: commons-io#commons-io;2.0.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.0.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: commons-io#commons-io;2.0.1[0m
 [0m[[0mdebug[0m] [0m	found commons-io#commons-io;2.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.3.7 ...[0m
@@ -162,6 +163,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-run-support_2.10;2.3.7 ...[0m
@@ -1608,8 +1610,8 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.uncommons.maths#uncommons-maths;1.2.2a[0m
 [0m[[0mdebug[0m] [0m	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-cluster_2.10;2.3.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-cluster_2.10;2.3.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1752,8 +1754,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
@@ -2405,8 +2407,8 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.eclipse.jetty#jetty-io;8.1.14.v20131031[0m
 [0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-io;8.1.14.v20131031 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
@@ -2419,8 +2421,8 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.eclipse.jetty#jetty-http;8.1.14.v20131031[0m
 [0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-http;8.1.14.v20131031 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->net.sourceforge.htmlunit#htmlunit;2.14 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->net.sourceforge.htmlunit#htmlunit;2.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.14->xalan#xalan;2.7.1 [runtime->runtime(*)][0m
@@ -2596,6 +2598,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
@@ -2624,6 +2627,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->runtime][0m
@@ -3666,8 +3670,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
@@ -3790,8 +3794,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
@@ -4117,8 +4121,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
@@ -4126,8 +4130,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->com.typesafe.akka#akka-actor_2.10;2.3.2 [runtime->runtime(*)][0m
@@ -4311,6 +4315,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
@@ -4339,6 +4344,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->runtime][0m
@@ -5381,8 +5387,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
@@ -5505,8 +5511,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
@@ -5832,8 +5838,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
@@ -5841,8 +5847,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->com.typesafe.akka#akka-actor_2.10;2.3.2 [runtime->runtime(*)][0m
@@ -6554,6 +6560,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
@@ -6582,6 +6589,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->runtime][0m
@@ -7624,8 +7632,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
@@ -7748,8 +7756,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
@@ -8075,8 +8083,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
@@ -8084,8 +8092,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->com.typesafe.akka#akka-actor_2.10;2.3.2 [runtime->runtime(*)][0m
@@ -8574,6 +8582,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
@@ -8602,6 +8611,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->runtime][0m
@@ -9644,8 +9654,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
@@ -9768,8 +9778,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
@@ -10095,8 +10105,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
@@ -10104,8 +10114,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->com.typesafe.akka#akka-actor_2.10;2.3.2 [runtime->runtime(*)][0m
@@ -10297,6 +10307,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#api-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
@@ -10325,6 +10336,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.7->commons-io#commons-io;2.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#routes-compiler_2.10;2.3.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#sbt-run-support_2.10;2.3.7 [compile->runtime][0m
@@ -11367,8 +11379,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
@@ -11491,8 +11503,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.3.2->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.3.2->com.typesafe.akka#akka-cluster_2.10;2.3.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.3.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
@@ -11818,8 +11830,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.14.v20131031->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
@@ -11827,8 +11839,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.slf4j#slf4j-api;1.7.5 {test=[runtime(*), master(*)]} => dependency: org.slf4j#slf4j-api;1.6.1 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.14.v20131031->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.14.v20131031->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#webdriver_2.10;1.0.0->com.typesafe.akka#akka-actor_2.10;2.3.2 [runtime->runtime(*)][0m
@@ -12517,19 +12529,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8438ms :: artifacts dl 196ms[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT compile produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT runtime produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT test produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT provided produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT optional produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT compile-internal produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT runtime-internal produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT test-internal produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT plugin produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT sources produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT docs produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT pom produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT scala-tool produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (8438ms resolve - 196ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5422ms :: artifacts dl 219ms[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT compile produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT runtime produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT test produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT provided produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT optional produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT compile-internal produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT runtime-internal produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT test-internal produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT plugin produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT sources produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT docs produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT pom produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT scala-tool produced in F:\project\practise\marketplace-play\api\project\target\resolution-cache\reports\default-api-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (5422ms resolve - 219ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

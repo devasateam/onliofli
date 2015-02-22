@@ -1,6 +1,6 @@
-// @SOURCE:/home/samir/personal/api/conf/routes
-// @HASH:84a1052259a5a1db25f5fd22e79fd0b24d013385
-// @DATE:Fri Feb 20 04:02:52 IST 2015
+// @SOURCE:F:/project/practise/marketplace-play/api/conf/routes
+// @HASH:cd4720583ae0ec709adb55914f3b84168b35c31d
+// @DATE:Mon Feb 23 00:36:08 IST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,8 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:39
+// @LINE:38
 // @LINE:36
 // @LINE:10
 // @LINE:9
@@ -44,6 +46,28 @@ class ReverseDashboard {
 def index(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "dashboard")
+}
+                        
+
+}
+                          
+
+// @LINE:39
+// @LINE:38
+class ReverseAuthenticationController {
+
+
+// @LINE:39
+def authenticate(email:String, password:String): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "loginnew" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("email", email)), Some(implicitly[QueryStringBindable[String]].unbind("password", password)))))
+}
+                        
+
+// @LINE:38
+def login(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "loginnew")
 }
                         
 
@@ -238,6 +262,8 @@ def runAsk(): Call = {
                   
 
 
+// @LINE:39
+// @LINE:38
 // @LINE:36
 // @LINE:10
 // @LINE:9
@@ -274,6 +300,36 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "dashboard"})
+      }
+   """
+)
+                        
+
+}
+              
+
+// @LINE:39
+// @LINE:38
+class ReverseAuthenticationController {
+
+
+// @LINE:39
+def authenticate : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.AuthenticationController.authenticate",
+   """
+      function(email,password) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "loginnew" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("email", email), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("password", password)])})
+      }
+   """
+)
+                        
+
+// @LINE:38
+def login : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.AuthenticationController.login",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "loginnew"})
       }
    """
 )
@@ -536,6 +592,8 @@ def runAsk : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:39
+// @LINE:38
 // @LINE:36
 // @LINE:10
 // @LINE:9
@@ -564,6 +622,26 @@ class ReverseDashboard {
 // @LINE:7
 def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Dashboard.index(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Dashboard", "index", Seq(), "GET", """""", _prefix + """dashboard""")
+)
+                      
+
+}
+                          
+
+// @LINE:39
+// @LINE:38
+class ReverseAuthenticationController {
+
+
+// @LINE:39
+def authenticate(email:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.AuthenticationController.authenticate(email, password), HandlerDef(this.getClass.getClassLoader, "", "controllers.AuthenticationController", "authenticate", Seq(classOf[String], classOf[String]), "POST", """""", _prefix + """loginnew""")
+)
+                      
+
+// @LINE:38
+def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.AuthenticationController.login(), HandlerDef(this.getClass.getClassLoader, "", "controllers.AuthenticationController", "login", Seq(), "GET", """""", _prefix + """loginnew""")
 )
                       
 

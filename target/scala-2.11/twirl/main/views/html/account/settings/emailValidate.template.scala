@@ -45,10 +45,10 @@ Seq[Any](format.raw/*1.14*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 20 04:02:53 IST 2015
-                  SOURCE: /home/samir/personal/api/app/views/account/settings/emailValidate.scala.html
-                  HASH: ef606d4cf07efdec7723a80c7a6b3fb3fbbb1037
-                  MATRIX: 746->1|861->13|889->32|916->34|935->45|974->47|1006->54|1034->62
+                  DATE: Mon Feb 23 00:36:09 IST 2015
+                  SOURCE: F:/project/practise/marketplace-play/api/app/views/account/settings/emailValidate.scala.html
+                  HASH: 116f5a05513edd55983586b5cae405750d95c3bb
+                  MATRIX: 746->1|861->13|891->35|919->38|938->49|977->51|1011->60|1039->68
                   LINES: 26->1|29->1|31->4|32->5|32->5|32->5|34->7|34->7
                   -- GENERATED --
               */

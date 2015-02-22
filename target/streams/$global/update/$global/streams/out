@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/samir/personal/api/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/F:/project/practise/marketplace-play/api/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: api#api_2.11;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for api#api_2.11;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies api#api_2.11;1.0->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f984ec6[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f872428[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
@@ -667,21 +667,23 @@
 [0m[[0minfo[0m] [0mResolving dom4j#dom4j;1.6.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: dom4j#dom4j;1.6.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: dom4j#dom4j;1.6.1[0m
-[0m[[0mdebug[0m] [0m	local: found revision in cache: dom4j#dom4j;1.6.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
-[0m[[0mdebug[0m] [0m		tried /home/samir/.ivy2/local/dom4j/dom4j/1.6.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for dom4j#dom4j;1.6.1[0m
-[0m[[0mdebug[0m] [0m	activator-local: found revision in cache: dom4j#dom4j;1.6.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/samir/personal/application/activator-1.2.12-minimal/repository/dom4j/dom4j/1.6.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for dom4j#dom4j;1.6.1[0m
-[0m[[0mdebug[0m] [0m	public: found revision in cache: dom4j#dom4j;1.6.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: dom4j#dom4j;1.6.1[0m
 [0m[[0mdebug[0m] [0m	found dom4j#dom4j;1.6.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->org.reflections#reflections;0.9.8 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->org.reflections#reflections;0.9.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;11.0.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.google.guava#guava;16.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -864,14 +866,7 @@
 [0m[[0minfo[0m] [0mResolving commons-logging#commons-logging;1.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.1[0m
-[0m[[0mdebug[0m] [0m	local: found revision in cache: commons-logging#commons-logging;1.1.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
-[0m[[0mdebug[0m] [0m		tried /home/samir/.ivy2/local/commons-logging/commons-logging/1.1.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for commons-logging#commons-logging;1.1.1[0m
-[0m[[0mdebug[0m] [0m	activator-local: found revision in cache: commons-logging#commons-logging;1.1.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/samir/personal/application/activator-1.2.12-minimal/repository/commons-logging/commons-logging/1.1.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for commons-logging#commons-logging;1.1.1[0m
-[0m[[0mdebug[0m] [0m	public: found revision in cache: commons-logging#commons-logging;1.1.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: commons-logging#commons-logging;1.1.1[0m
 [0m[[0mdebug[0m] [0m	found commons-logging#commons-logging;1.1.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [compile->master(*)][0m
@@ -889,6 +884,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
@@ -1530,6 +1526,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [compile->master(*)][0m
@@ -1576,6 +1577,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
@@ -1699,6 +1704,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
@@ -2197,6 +2203,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [compile->master(*)][0m
@@ -2243,6 +2254,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
@@ -2366,6 +2381,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
@@ -3246,9 +3262,9 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-collections#commons-collections;3.2.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: commons-collections#commons-collections;3.2.1[0m
 [0m[[0mdebug[0m] [0m	found commons-collections#commons-collections;3.2.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -3746,7 +3762,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies xalan#serializer;2.7.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
@@ -4212,6 +4228,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [compile->master(*)][0m
@@ -4258,6 +4279,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
@@ -4381,6 +4406,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
@@ -4881,6 +4907,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [compile->master(*)][0m
@@ -4927,6 +4958,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
@@ -5050,6 +5085,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
@@ -5550,6 +5586,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [compile->master(*)][0m
@@ -5596,6 +5637,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
@@ -5719,6 +5764,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
@@ -6281,9 +6327,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -6816,7 +6862,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies xalan#serializer;2.7.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
@@ -7728,6 +7774,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [compile->master(*)][0m
@@ -7774,6 +7825,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
@@ -7897,6 +7952,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
@@ -8398,6 +8454,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javassist#javassist;3.12.1.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [compile->master(*)][0m
@@ -8444,6 +8505,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.reflections#reflections;0.9.8->dom4j#dom4j;1.6.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.0.b2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies dom4j#dom4j;1.6.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.guava#guava;16.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.3.7->com.google.code.findbugs#jsr305;2.0.3 [runtime->runtime(*)][0m
@@ -8567,6 +8632,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->org.apache.httpcomponents#httpcore;4.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.0.1->commons-codec#commons-codec;1.9 [runtime->compile][0m
@@ -9134,9 +9200,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -9669,7 +9735,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies xalan#serializer;2.7.1->xml-apis#xml-apis;1.4.01 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
@@ -9941,23 +10007,23 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.7!trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7676ms :: artifacts dl 199ms[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 compile produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 runtime produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 test produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 provided produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 optional produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 compile-internal produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 runtime-internal produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 test-internal produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 plugin produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 sources produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 docs produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 pom produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 scala-tool produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-trace-compile produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-echo-trace-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-trace-test produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-echo-trace-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-weave produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-echo-weave.xml[0m
-[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-sigar produced in /home/samir/personal/api/target/resolution-cache/reports/api-api_2.11-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (7676ms resolve - 199ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5115ms :: artifacts dl 220ms[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 compile produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 runtime produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 test produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 provided produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 optional produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 compile-internal produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 runtime-internal produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 test-internal produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 plugin produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 sources produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 docs produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 pom produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 scala-tool produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-trace-compile produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-echo-trace-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-trace-test produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-echo-trace-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-weave produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-echo-weave.xml[0m
+[0m[[0mdebug[0m] [0m	report for api#api_2.11;1.0 echo-sigar produced in F:\project\practise\marketplace-play\api\target\resolution-cache\reports\api-api_2.11-echo-sigar.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (5115ms resolve - 220ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

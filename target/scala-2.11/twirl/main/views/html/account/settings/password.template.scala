@@ -53,10 +53,10 @@ Seq[Any](format.raw/*1.14*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 20 04:02:53 IST 2015
-                  SOURCE: /home/samir/personal/api/app/views/account/settings/password.scala.html
-                  HASH: 7002ce21b374df8b69ed7e2ec45ed938b56ef41d
-                  MATRIX: 741->1|856->13|884->32|911->34|930->45|969->47|1001->54|1058->91|1090->98|1118->106|1151->113|1224->177|1264->179|1300->188|1419->280|1457->297|1510->320
+                  DATE: Mon Feb 23 00:36:09 IST 2015
+                  SOURCE: F:/project/practise/marketplace-play/api/app/views/account/settings/password.scala.html
+                  HASH: c746a4b73cbf37740ece1ea4ae6ff50c759805d4
+                  MATRIX: 741->1|856->13|886->35|914->38|933->49|972->51|1006->60|1063->97|1097->106|1125->114|1160->123|1233->187|1273->189|1310->199|1430->292|1468->309|1523->334
                   LINES: 26->1|29->1|31->4|32->5|32->5|32->5|34->7|34->7|36->9|36->9|38->11|38->11|38->11|39->12|40->13|40->13|42->15
                   -- GENERATED --
               */

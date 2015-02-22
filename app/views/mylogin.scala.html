@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<h1>Login</h1>
+<script type="text/javascript" src='http://code.jquery.com/jquery-1.11.2.min.js'></script>
+</head>
+
+<body>
+<form action="/loginnew" id="loginform">
+
+<table>
+
+<tr><td>Email</td><td><input type="text" name="email"  id="email"/> </td></tr>
+<tr><td>Password</td><td><input type="password" name="password" id="password"  ></td></tr>
+<tr><td></td> <td><input type="submit" value="login"> </td></tr>
+</table>
+</form>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#loginform').unbind('submit').bind('submit',function(e){
+			var formData=$(this).serialize();
+			e.preventDefault();
+			$.ajax({
+				url:"/loginnew?email="+$('#email').val()+"&password="+$('#email').val(),
+				method:'POST',
+				success:function(response){
+					alert(response.message);
+				}
+				
+			});
+		})
+	});
+</script>
+</html>

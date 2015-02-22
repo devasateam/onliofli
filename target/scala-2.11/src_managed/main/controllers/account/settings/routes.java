@@ -1,6 +1,6 @@
-// @SOURCE:/home/samir/personal/api/conf/routes
-// @HASH:84a1052259a5a1db25f5fd22e79fd0b24d013385
-// @DATE:Fri Feb 20 04:02:52 IST 2015
+// @SOURCE:F:/project/practise/marketplace-play/api/conf/routes
+// @HASH:cd4720583ae0ec709adb55914f3b84168b35c31d
+// @DATE:Mon Feb 23 00:36:08 IST 2015
 
 package controllers.account.settings;
 

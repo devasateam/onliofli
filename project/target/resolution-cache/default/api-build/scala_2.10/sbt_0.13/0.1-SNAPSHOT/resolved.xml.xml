@@ -4,7 +4,7 @@
 		module="api-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150220022636"
+		publication="20150222173110"
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>

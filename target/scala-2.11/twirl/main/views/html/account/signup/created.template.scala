@@ -46,10 +46,10 @@ Seq[Any](_display_(/*1.2*/main()/*1.8*/ {_display_(Seq[Any](format.raw/*1.10*/("
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 20 04:02:54 IST 2015
-                  SOURCE: /home/samir/personal/api/app/views/account/signup/created.scala.html
-                  HASH: c989909db1c7176e440bb12c58eae1d1d139cbd1
-                  MATRIX: 815->1|828->7|867->9|899->15|930->20|980->50|1016->61|1066->91|1098->97|1169->142|1183->148|1221->166|1274->193|1312->211
+                  DATE: Mon Feb 23 00:36:09 IST 2015
+                  SOURCE: F:/project/practise/marketplace-play/api/app/views/account/signup/created.scala.html
+                  HASH: 599705ec167ac4aaa45bac4d4abd674f7c130df1
+                  MATRIX: 815->1|828->7|867->9|901->17|932->22|982->52|1019->64|1069->94|1103->102|1175->148|1189->154|1227->172|1280->199|1318->217
                   LINES: 29->1|29->1|29->1|31->3|31->3|31->3|32->4|32->4|34->6|35->7|35->7|35->7|35->7|35->7
                   -- GENERATED --
               */
