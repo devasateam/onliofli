@@ -9,7 +9,7 @@
 		extra-scalaVersion="2.10"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150220022636"/>
+		date="20150223013731"/>
 	<dependencies>
 		<module organisation="com.typesafe.sbt" name="sbt-coffeescript">
 			<revision name="1.0.0-RC3" status="release" pubdate="20140521181719" resolver="sbt-chain" artresolver="sbt-chain" extra-sbtVersion="0.13" extra-scalaVersion="2.10" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="139">
@@ -1368,7 +1368,7 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="2.0.1" status="release" pubdate="20150217120856" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" default="true" conf="default, master(*), compile(*), runtime(*)" position="-1">
+			<revision name="2.0.1" status="release" pubdate="20150220162326" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" default="true" conf="default, master(*), compile(*), runtime(*)" position="-1">
 				<metadata-artifact status="no" details="" size="408" time="0" location="/home/samir/.ivy2/cache/commons-io/commons-io/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="UNKNOWN"/>
 				<evicted-by rev="2.4"/>
 				<caller organisation="com.typesafe.play" name="routes-compiler_2.10" conf="default, compile, runtime, master" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="2.3.7"/>

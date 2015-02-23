@@ -1,4 +1,4 @@
-# SMTP server, example : smtp.gmail.com
+# SMTP serveur, example : smtp.gmail.com
 smtp.host=smtp.gmail.com
 
 # Mail Port, example : 465, 587 or 25
@@ -6,18 +6,18 @@ smtp.port=587
 
 # Mail Auth User, example : user@gmail.com
 # Comment if no auth
-smtp.user="devasateam@gmail.com"
+smtp.user="user@gmail.com"
 
 # Mail Auth Password
 # Comment if no auth
-smtp.password=wewillrockyou007
+smtp.password=password
 
 # Mail SSL : true ou false
 smtp.ssl=true
 
 # Mail user from
-mail.from="devasateam@gmail.com"
+mail.from="app@yourdomain.com"
 
 # Mail sign
-mail.sign=onliofly
+mail.sign=The app Team
 

@@ -1,7 +1,5 @@
 package controllers.account;
 
-import static play.data.Form.form;
-
 import java.net.MalformedURLException;
 
 import models.Token;
@@ -12,14 +10,9 @@ import models.account.utils.Mail;
 import org.apache.commons.mail.EmailException;
 
 import play.Logger;
-import play.data.Form;
-import play.data.validation.Constraints;
 import play.i18n.Messages;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.account.reset.ask;
-import views.html.account.reset.reset;
-import views.html.account.reset.runAsk;
 
 /**
  * Token password :
@@ -32,24 +25,14 @@ import views.html.account.reset.runAsk;
  */
 public class Reset extends Controller {
 
-    public static class AskForm {
-        @Constraints.Required
-        public String email;
-    }
-
-    public static class ResetForm {
-        @Constraints.Required
-        public String inputPassword;
-    }
-
     /**
      * Display the reset password form.
      *
      * @return reset password form
      */
     public static Result ask() {
-        Form<AskForm> askForm = form(AskForm.class);
-        return ok(ask.render(askForm));
+        
+        return ok();
     }
 
     /**
@@ -57,15 +40,15 @@ public class Reset extends Controller {
      *
      * @return reset password form if error, runAsk render otherwise
      */
-    public static Result runAsk() {
-        Form<AskForm> askForm = form(AskForm.class).bindFromRequest();
+    public static Result runAsk(String email1) {
+        
 
-        if (askForm.hasErrors()) {
+        if (email1==null) {
             flash("error", Messages.get("signup.valid.email"));
-            return badRequest(ask.render(askForm));
+            return badRequest();
         }
 
-        final String email = askForm.get().email;
+        final String email = email1;
         Logger.debug("runAsk: email = " + email);
         User user = User.findByEmail(email);
         Logger.debug("runAsk: user = " + user);
@@ -76,19 +59,19 @@ public class Reset extends Controller {
         if (user == null) {
             Logger.debug("No user found with email " + email);
             sendFailedPasswordResetAttempt(email);
-            return ok(runAsk.render());
+            return ok();
         }
 
         Logger.debug("Sending password reset link to user " + user);
 
         try {
             Token.sendMailResetPassword(user);
-            return ok(runAsk.render());
+            return ok();
         } catch (MalformedURLException e) {
             Logger.error("Cannot validate URL", e);
             flash("error", Messages.get("error.technical"));
         }
-        return badRequest(ask.render(askForm));
+        return badRequest();
     }
 
     /**
@@ -108,72 +91,71 @@ public class Reset extends Controller {
 
         if (token == null) {
             flash("error", Messages.get("error.technical"));
-            Form<AskForm> askForm = form(AskForm.class);
-            return badRequest(ask.render(askForm));
+            
+            return badRequest();
         }
 
         Token resetToken = Token.findByTokenAndType(token, Token.TypeToken.password);
         if (resetToken == null) {
             flash("error", Messages.get("error.technical"));
-            Form<AskForm> askForm = form(AskForm.class);
-            return badRequest(ask.render(askForm));
+            
+            return badRequest();
         }
 
         if (resetToken.isExpired()) {
             resetToken.delete(resetToken);
             flash("error", Messages.get("error.expiredresetlink"));
-            Form<AskForm> askForm = form(AskForm.class);
-            return badRequest(ask.render(askForm));
+            
+            return badRequest();
         }
 
-        Form<ResetForm> resetForm = form(ResetForm.class);
-        return ok(reset.render(resetForm, token));
+        return ok();
     }
 
     /**
      * @return reset password form
      */
-    public static Result runReset(String token) {
-        Form<ResetForm> resetForm = form(ResetForm.class).bindFromRequest();
+    public static Result runReset(String token,String inputPassword) {
+        
 
-        if (resetForm.hasErrors()) {
+        if (token==null) {
             flash("error", Messages.get("signup.valid.password"));
-            return badRequest(reset.render(resetForm, token));
+            return badRequest();
         }
 
         try {
             Token resetToken = Token.findByTokenAndType(token, Token.TypeToken.password);
             if (resetToken == null) {
                 flash("error", Messages.get("error.technical"));
-                return badRequest(reset.render(resetForm, token));
+                return badRequest();
             }
 
             if (resetToken.isExpired()) {
                 resetToken.delete(resetToken);
                 flash("error", Messages.get("error.expiredresetlink"));
-                return badRequest(reset.render(resetForm, token));
+                return badRequest();
             }
 
             // check email
             User user = User.findById(resetToken.userId);
             if (user == null) {
                 flash("error", Messages.get("error.technical"));
-                return badRequest(reset.render(resetForm, token));
+                return badRequest();
             }
 
-            String password = resetForm.get().inputPassword;
+            String password = inputPassword;
             user.changePassword(password);
 
             // Send email saying that the password has just been changed.
             sendPasswordChanged(user);
             flash("success", Messages.get("resetpassword.success"));
-            return ok(reset.render(resetForm, token));
+            return ok();
         } catch (AppException e) {
             flash("error", Messages.get("error.technical"));
-            return badRequest(reset.render(resetForm, token));
+            return badRequest();
         } catch (EmailException e) {
             flash("error", Messages.get("error.technical"));
-            return badRequest(reset.render(resetForm, token));
+            return badRequest();
         }
 
     }

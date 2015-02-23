@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="echo-sigar"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
-		date="20150222004929"/>
+		date="20150224001958"/>
 	<dependencies>
 		<module organisation="com.typesafe.trace" name="trace-sigar-libs">
 			<revision name="0.1.7" status="release" pubdate="20150215111818" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">

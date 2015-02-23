@@ -1,56 +1,56 @@
 package controllers;
 
+import com.ecommerce.model.dao.ProductDao;
+
 import models.Product;
 import play.Logger;
 import play.data.Form;
 import play.mvc.Result;
 
-public class ProductController extends BaseApiController{
+public class ProductController extends BaseApiController {
 
-	public static Result getProducts(){
+	public static Result getProducts() {
 		Logger.info("Getting products");
-		return jsonResponse(Product.all());
-	}
-	
-	public static Result getProductBySku(String sku){
-		Logger.info("Getting products by sku");
-		
-		return jsonResponse(Product.findBySku(sku));
+		return jsonResponse(ProductDao.all());
 	}
 
-	public static Result createProduct(){
+	public static Result getProductBySku(String sku) {
+		Logger.info("Getting products by sku");
+
+		return jsonResponse(ProductDao.findBySku(sku));
+	}
+
+	public static Result createProduct() {
 		Logger.info("Creating products");
 
-		Form<Product> pForm = Form.form(Product.class)
-				.bindFromRequest();
+		Form<Product> pForm = Form.form(Product.class).bindFromRequest();
 		if (pForm.hasErrors()) {
 			return badRequest("Invalid json data "
 					+ pForm.errorsAsJson().toString());
 		}
 		Product p = pForm.get();
-		Product.create(p);
+		ProductDao.create(p);
 		return jsonResponse("success");
 	}
-	
-	public static Result modifyProduct(String sku){
+
+	public static Result modifyProduct(String sku) {
 		Logger.info("Modify product");
 
-		Form<Product> pForm = Form.form(Product.class)
-				.bindFromRequest();
+		Form<Product> pForm = Form.form(Product.class).bindFromRequest();
 		if (pForm.hasErrors()) {
 			return badRequest("Invalid json data "
 					+ pForm.errorsAsJson().toString());
 		}
 		Product p = pForm.get();
-		Product findBySku = Product.findBySku(sku);
-		findBySku.map(p);
-		Product.update(findBySku);
+		Product findBySku = ProductDao.findBySku(sku);
+		// findBySku.map(p);
+		ProductDao.update(findBySku);
 		return jsonResponse("success");
 	}
-	public static Result deleteProduct(String sku){
-		Logger.info("Deleting product by sku");
 
-		Product.deleteBySku(sku);
+	public static Result deleteProduct(String sku) {
+		Logger.info("Deleting product by sku");
+		ProductDao.deleteBySku(sku);
 		return jsonResponse("success");
 	}
 }

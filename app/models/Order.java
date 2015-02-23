@@ -1,18 +1,12 @@
 package models;
 
-import java.util.*;
+import java.util.List;
 
+import net.vz.mongodb.jackson.Id;
+import net.vz.mongodb.jackson.JacksonDBCollection;
+import net.vz.mongodb.jackson.ObjectId;
 import play.data.validation.Constraints.Required;
 import play.modules.mongodb.jackson.MongoDB;
-import net.vz.mongodb.jackson.JacksonDBCollection;
-import net.vz.mongodb.jackson.Id;
-import net.vz.mongodb.jackson.ObjectId;
-
-import org.codehaus.jackson.annotate.JsonProperty;
-
-import com.mongodb.BasicDBObject;
-
-import javax.persistence.*;
 
 public class Order {
 

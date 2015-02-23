@@ -85,6 +85,20 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-io#commons-io;2.0.1[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: found revision in cache: commons-io#commons-io;2.0.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
 [0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.0.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.0.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for commons-io#commons-io;2.0.1[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found revision in cache: commons-io#commons-io;2.0.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-io/commons-io/2.0.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-io/commons-io/2.0.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for commons-io#commons-io;2.0.1[0m
+[0m[[0mdebug[0m] [0m	local: found revision in cache: commons-io#commons-io;2.0.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
+[0m[[0mdebug[0m] [0m		tried /home/samir/.ivy2/local/commons-io/commons-io/2.0.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for commons-io#commons-io;2.0.1[0m
+[0m[[0mdebug[0m] [0m	activator-local: found revision in cache: commons-io#commons-io;2.0.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/samir/personal/application/activator-1.2.12-minimal/repository/commons-io/commons-io/2.0.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for commons-io#commons-io;2.0.1[0m
+[0m[[0mdebug[0m] [0m	public: found revision in cache: commons-io#commons-io;2.0.1 (resolved by sbt-chain): but it's a default one, maybe we can find a better one[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/commons-io/commons-io/2.0.1/commons-io-2.0.1.pom[0m
 [0m[[0mdebug[0m] [0m	found commons-io#commons-io;2.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->runtime(*)][0m
@@ -12517,7 +12531,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8438ms :: artifacts dl 196ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 10180ms :: artifacts dl 182ms[0m
 [0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT compile produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT runtime produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT test produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-test.xml[0m
@@ -12531,5 +12545,5 @@
 [0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT docs produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT pom produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#api-build;0.1-SNAPSHOT scala-tool produced in /home/samir/personal/api/project/target/resolution-cache/reports/default-api-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (8438ms resolve - 196ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (10180ms resolve - 182ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
