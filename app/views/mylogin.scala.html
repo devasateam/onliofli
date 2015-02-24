@@ -23,10 +23,12 @@
 			var formData=$(this).serialize();
 			e.preventDefault();
 			$.ajax({
-				url:"/loginnew?email="+$('#email').val()+"&password="+$('#email').val(),
+				url:"/loginnew",
+				contentType: "text/html",
+				data:formData,
 				method:'POST',
 				success:function(response){
-					alert(response.message);
+					alert(response);
 				}
 				
 			});
