@@ -42,11 +42,18 @@
 		$('#loginform').unbind('submit').bind('submit', function(e) {
 			e.preventDefault();
 			
-			$.post('/signup',
-				      {'name':'aasamira1a','email':'sam.su1111nny001@gmail.com','password':'sam'},
-				      function(status,data) {
-				          window.alert(status,data);
-			});
+// 			$.post('/signup',
+// 				      {'name':'aasamira1a','email':'sam.su1111nny001@gmail.com','password':'sam'},
+// 				      function(status,data) {
+// 				          window.alert(status,data);
+// 			});
+//  $.ajax({
+//					url : '/signup?name='+name+'&email='+email+'&password='pass,
+//					method : 'POST',
+//					success : function(response) {
+//						window.location.href = response;
+//					}
+//				});
 			
 // 			$.post('/reset',
 // 				      {'token':'aasamira1a','password':'sam.su111nny001@gmail.com'},
@@ -54,13 +61,13 @@
 // 				          window.alert(status);
 // 			});
 			
-// 			$.ajax({
-// 				url : '/login?email=sam.su111nny001@gmail.com&password=sam',
-// 				method : 'POST',
-// 				success : function(response) {
-// 					window.location.href = response;
-// 				}
-// 			});
+			$.ajax({
+				url : '/login?email=sam.su111nny001@gmail.com&password=sam',
+				method : 'POST',
+				success : function(response) {
+					window.location.href = response;
+				}
+			});
 		})
 	});
 </script>

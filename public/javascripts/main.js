@@ -151,7 +151,8 @@ jQuery(document).ready(function(){
         // }
     });
 
-	jQuery('form#signIn').submit(function(){
+	jQuery('form#signIn').submit(function(e){
+		e.preventDefault();
 		var b = $("form#signIn").valid();
         if(!(b)) {
             return false;
@@ -161,8 +162,7 @@ jQuery(document).ready(function(){
 	    // var srt = jQuery("#" + jQuery(this).attr("id")).serialize();
     	jQuery.ajax({
 	        type: 'POST',
-	        url: '/login',
-	        data: {'email': email,'password':pass},
+	        url: '/login?email='+email+'&password='+pass,
 	        dataType: 'JSON',
 	        success: function(result) {
 	        	if(result.status_code == 200)
@@ -196,33 +196,28 @@ jQuery(document).ready(function(){
 		var pass = $('#newpassword').val();
 		var conf_pass = $('#conf_pass').val();
 			console.log('checking if pass');
-			// var formData = new FormData($(this)[0]);
-		    // var srt = jQuery("#" + jQuery(this).attr("id")).serialize();
-//		    jQuery.ajax({
-//		        url: '/signup',
-//		        type: 'POST',
-//		        data: {'fullname':fullname,'email': email,'password':pass},
-//		        success: function (result) {
-//		        	console.log(result);
-//		           if(result.status_code == 200)
-//		        	{
-//		        		window.location.href="/dashboard";
-//		        	}
-//		        	else if(result.status_code == 401)
-//	                {
-//	                    window.location.href="/login";
-//	                }
-//		        	else
-//		        	{
-//		        		alert(result.data.Reason);
-//		        	}
-//		        }
-//		    });
-			$.post('/signup',
-				      {'name':'aasamiraa','email':'sam111.sunny001@gmail.com','password':'sam'},
-				      function(data) {
-				          window.alert(data);
-			});
+			 var formData = new FormData($(this)[0]);
+		     var srt = jQuery("#" + jQuery(this).attr("id")).serialize();
+		     var data={'name':fullname,'email': email,'password':pass};
+		    jQuery.ajax({
+		        url: '/signup?name='+fullname+'&email='+email+'&password='+pass,
+		        type: 'POST',
+		        success: function (result) {
+		        	console.log(result);
+		           if(result.status_code == 200)
+		        	{
+		        		window.location.href="/dashboard";
+		        	}
+		        	else if(result.status_code == 401)
+	                {
+	                    window.location.href="/login";
+	                }
+		        	else
+		        	{
+		        		alert(result.data.Reason);
+		        	}
+		        }
+		    });
 	});
 	    
 });
