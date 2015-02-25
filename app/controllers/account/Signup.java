@@ -63,7 +63,7 @@ public class Signup extends BaseApiController {
 			flash("error", Messages.get("error.technical"));
 		}
 
-		return jsonResponse(Messages.get("error.email.already.exist"), 400);
+		return jsonResponse(Messages.get("error.email.already.exist"), 200);
 	}
 
 	/**
@@ -79,7 +79,7 @@ public class Signup extends BaseApiController {
 		// Check unique email
 		if (User.findByEmail(email) != null) {
 			flash("error", Messages.get("error.email.already.exist"));
-			return jsonResponse(Messages.get("error.email.already.exist"), 400);
+			return jsonResponse(Messages.get("error.email.already.exist"), 200);
 		}
 
 		return null;
@@ -121,13 +121,13 @@ public class Signup extends BaseApiController {
 		User user = User.findByConfirmationToken(token);
 		if (user == null) {
 			flash("error", Messages.get("error.unknown.email"));
-			return jsonResponse(Messages.get("error.unknown.email"), 400);
+			return jsonResponse(Messages.get("error.unknown.email"), 200);
 		}
 
 		if (user.validated) {
 			flash("error", Messages.get("error.account.already.validated"));
 			return jsonResponse(
-					Messages.get("error.account.already.validated"), 400);
+					Messages.get("error.account.already.validated"), 200);
 		}
 
 		try {
@@ -135,12 +135,12 @@ public class Signup extends BaseApiController {
 				sendMailConfirmation(user);
 				flash("success", Messages.get("account.successfully.validated"));
 				return jsonResponse(
-						Messages.get("account.successfully.validated"), 400);
+						Messages.get("account.successfully.validated"), 200);
 			} else {
 				Logger.debug("Signup.confirm cannot confirm user");
 				flash("error", Messages.get("error.confirm"));
 				return jsonResponse(
-						Messages.get("Signup.confirm cannot confirm user"), 400);
+						Messages.get("Signup.confirm cannot confirm user"), 200);
 			}
 		} catch (AppException e) {
 			Logger.error("Cannot signup", e);
@@ -149,7 +149,7 @@ public class Signup extends BaseApiController {
 			Logger.debug("Cannot send email", e);
 			flash("error", Messages.get("error.sending.confirm.email"));
 		}
-		return jsonResponse(Messages.get("error.sending.confirm.email"), 400);
+		return jsonResponse(Messages.get("error.sending.confirm.email"), 200);
 	}
 
 	/**
