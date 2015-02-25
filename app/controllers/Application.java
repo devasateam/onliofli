@@ -2,9 +2,6 @@ package controllers;
 
 import java.util.Map;
 
-import com.accounts.service.AuthenticationService;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-
 import models.User;
 import models.account.utils.AppException;
 import play.Logger;
@@ -12,7 +9,10 @@ import play.i18n.Messages;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-import utils.UrlConstants;
+
+import com.account.services.AuthenticationService;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.onliofli.utils.UrlConstants;
 
 /**
  * Login and Logout.

@@ -1,9 +1,11 @@
-package com.accounts.service;
+package com.account.services;
+
 
 import models.User;
 import models.account.utils.AppException;
 import play.i18n.Messages;
-import utils.UrlConstants;
+
+import com.onliofli.utils.UrlConstants;
 
 /**
 

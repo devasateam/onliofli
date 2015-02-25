@@ -1,4 +1,5 @@
-package utils;
+package com.onliofli.utils;
+
 
 public interface UrlConstants {
 	public static String HOME="/";
