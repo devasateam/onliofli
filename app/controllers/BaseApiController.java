@@ -5,7 +5,6 @@ package controllers;
 
 
 //import play.data.*;
-import play.Logger;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -14,10 +13,6 @@ import play.mvc.Result;
 public class BaseApiController extends Controller {
 	
 
-    
-    public static Result index() {
- 	   return jsonResponse("success");
-    }
     
     public static Result preflight(String path) {
 		response().setHeader("Access-Control-Allow-Origin", "*");

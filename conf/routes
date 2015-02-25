@@ -3,13 +3,20 @@
 # ~~~~
 
 # Home page
-OPTIONS     /api/*path                          controllers.BaseApiController.preflight(path: String)
-GET         /                                   controllers.BaseApiController.index()
-#Products
-GET          /api/products						controllers.ProductController.getProducts()
-GET          /api/products/:sku					controllers.ProductController.getProductBySku(sku: String)
-POST			 /api/products						controllers.ProductController.createProduct()
-DELETE 		 /api/products/:sku					controllers.ProductController.deleteProduct(sku: String)
+POST    /login                      controllers.Application.authenticate(email:String,password:String)
+GET     /logout                     controllers.Application.logout()
+# Registers the user, sending an email to confirm the account.
+
+POST    /signup                     controllers.account.Signup.save()
+
+# Accessed when the user confirms the registration.
+#GET     /confirm/:confirmToken      controllers.account.Signup.confirm(confirmToken:String)
+
+# Resets the password using the password.
+#GET     /reset/:token               controllers.account.Reset.reset(token:String)
+POST    /reset			             controllers.account.Reset.runReset()
+
+GET     /email/:token               controllers.account.settings.Email.validateEmail(token:String)
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /*file               controllers.Assets.at(path="/public", file)

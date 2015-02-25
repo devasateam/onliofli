@@ -1,0 +1,122 @@
+body {
+	font-family: verdana,arial,helvetica,sans-serif !important;
+	font-size: 12px !important;
+}
+
+.sign-container {
+	width: 600px;
+	display: inline-block;
+	text-align: right;
+	height: auto;
+}
+.side-block {
+	display: inline-block;
+}
+.side-block.sbleft {
+	padding-right: 40px;
+	border-right: 1px solid white;
+}
+.side-block.sbright {
+	float: right;
+	padding-left: 40px;
+	margin-top: 26px;
+}
+.divider {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background-size: 24px;
+	display: inline-block;
+	top: 36px;
+	background-color: #10AAEE;
+	border-radius: 25px;
+	color: white;
+}
+.sign-in .divider {
+	left: 59%;
+}
+.sign-up .divider {
+	left: 59%;
+}
+.divider span {
+	display: inline-block;
+	position: relative;
+	top: 8px;
+	left: -6px;
+}
+.sign-in {
+	border: 1px solid #BCE5F8;
+	padding: 10px;
+	margin-bottom: 50px;
+	background-color: #BCE5F8;
+	/*border-radius: 5px;*/
+	font-weight: bold;
+	position: relative;
+	/*display: none;*/
+}
+.forgot {
+	font-size: 10px;
+}
+.sign-up {
+	border: 1px solid #BCE5F8;
+	padding: 10px;
+	background-color: #BCE5F8;
+	/*border-radius: 5px;*/
+	font-weight: bold;
+	position: relative;
+
+}
+/*.sign-container button {
+	cursor: pointer;
+	background-color: #10AAEE;
+	border-radius: 5px;
+	width: 60px;
+	padding: 5px;
+	color: #ffffff;
+	font-weight: bold;
+}*/
+.sign-container input {
+	width: 180px;
+	margin-bottom: 10px;
+	border: 1px solid #BCE5F8;
+}
+.sign-container input[type=button] {
+	background-color: #10AAEE;
+	border-radius: 5px;
+	/*width: 60px;*/
+	padding: 5px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.sign-title {
+	background: yellow;
+	background: -webkit-linear-gradient(#BCE5F8, #10AAEE); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#BCE5F8, #10AAEE); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#BCE5F8, #10AAEE); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#BCE5F8, #10AAEE); /* Standard syntax */
+	/*margin: -10px -10px 19px;*/
+	text-align: center;
+	padding: 5px 0;
+	color: white;
+	font-weight: bold;
+}
+.sign-container #signInSubmit,
+.sign-container #signUpSubmit{
+	cursor: pointer;
+	background-color: #10AAEE;
+	border-radius: 5px;
+	padding: 5px;
+	color: #ffffff;
+	font-weight: bold;
+	border: none;
+	margin-bottom: 10px;
+}
+.already_account{
+	display: inline-block;
+	font-size: 11px;
+}
+label.error {
+	color: red;
+	font-size: 10px;
+	display: block;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="library/bootstrap-3.3.2-dist/css/bootstrap.css">
+		<script type="text/javascript" src="library/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="library/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="library/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="javascripts/main.js"></script>
+		<script type="text/javascript">
+	      (function() {
+	       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	       po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+	       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	     })();
+		</script>
+	</head>
+	<body>
+		<header>
+		</header>
+		<section>
+			<div class="sign-container">
+				<div class="sign-title login">Sign in to your account</div>
+				<div class="sign-in">
+					<div class="divider"><span>OR</span></div>
+					<div class="side-block sbleft">
+						<form name="sign_in" method="post" id="signIn">
+							<label>E-Mail address:</label>
+		                    <input type="text" name="email" id="email"/><br>
+		                    <label>Password:</label>
+		                    <input type="password" name="password" id="password"/><br>
+		                    <!-- <input type="checkbox" name="autologin"/><span>Login Automatically</span> -->
+		                    <button type="submit" id="signInSubmit" >Login</button><br>
+		                    <div class="forgot">
+		                    	<a href="password/reset">Forgot Your Password?</a>
+		                    </div>
+		                </form>
+		            </div>
+
+	                <div class="side-block sbright">
+						<input type="button"  value="Sign In with Google+" onclick="login()" />
+					</div>	
+					<!-- <input type="button"  value="Logout" onclick="logout()" /> -->
+					<div class="already_account"><a href="/signup.html">New User?</a></div>	
+				</div>
+			</div>
+		</section>
+		<footer>
+		</footer>
+		<script>
+			// $('#conf_pass').on('keyup', function () {
+			//     if ($(this).val() === $('#password').val()) {
+			//         $('#message').html('');
+			//         $('#signup #signUpSubmit').removeAttr('disabled');
+			        
+			//     } else{
+			//     	$('#message').html('Password does not match').css('color', 'red');
+			//     	$('#signup #signUpSubmit').attr('disabled','disabled');
+			//     } 
+			// });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<h1>Login</h1>
+<script type="text/javascript"
+	src='http://code.jquery.com/jquery-1.11.2.min.js'></script>
+</head>
+
+<body>
+	<form action="/signup" id="loginform">
+
+		<table>
+			
+			<tr>
+				<td>name</td>
+				<td><input type="text" name="name" id="name" /></td>
+			</tr>
+			
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email" id="email" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" id="password"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="login"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function() {
+// 		$.post('/post',
+// 			      {'foo':'bar'},
+// 			      function(data) {
+// 			          window.alert(data);
+// 		});
+		$('#loginform').unbind('submit').bind('submit', function(e) {
+			e.preventDefault();
+			
+			$.post('/signup',
+				      {'name':'aasamira1a','email':'sam.su1111nny001@gmail.com','password':'sam'},
+				      function(status,data) {
+				          window.alert(status,data);
+			});
+			
+// 			$.post('/reset',
+// 				      {'token':'aasamira1a','password':'sam.su111nny001@gmail.com'},
+// 				      function(status) {
+// 				          window.alert(status);
+// 			});
+			
+// 			$.ajax({
+// 				url : '/login?email=sam.su111nny001@gmail.com&password=sam',
+// 				method : 'POST',
+// 				success : function(response) {
+// 					window.location.href = response;
+// 				}
+// 			});
+		})
+	});
+</script>
+</html>

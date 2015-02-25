@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="library/bootstrap-3.3.2-dist/css/bootstrap.css">
+		<script type="text/javascript" src="library/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="library/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="library/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="/javascripts/main.js"></script>
+		<script type="text/javascript">
+	      (function() {
+	       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	       po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+	       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	     })();
+		</script>
+	</head>
+	<body>
+		<header>
+		</header>
+		<section>
+			<div class="sign-container">
+				<div class="sign-title register">New user ?? Register Now </div>
+				<div class="sign-up">	
+					<div class="divider"><span>OR</span></div>
+						<div class="side-block sbleft">
+							<form name="sign_up" method="post" id="signUp">
+								<label>Name:</label>
+		                        <input type="text" name="full_name" id="fullname"/><br>
+		                        <label>E-Mail address:</label>
+		                        <input type="text" name="newemail" id="newemail"/><br>
+		                        <label>Password:</label>
+		                        <input type="password" name="newpassword" id="newpassword" value=""/><br>
+		                        <label>Confirm Password:</label>
+		                        <input type="password" name="conf_pass" id="conf_pass" value=""/><br>
+		                        <span id='message'></span>
+		                        <button type="submit" id="signUpSubmit" value="submit " name="submit">Register</button>
+		                    </form>
+		                </div>
+	                    <div class="side-block sbright">
+							<input type="button"  value="Sign Up with Google+" onclick="login()" />
+						</div>
+					<div class="already_account"><a href="/signin.html">Already have an account?</a></div>				
+				</div>
+			</div>
+		</section>
+		<footer>
+		</footer>
+		<script>
+			// $('#conf_pass').on('keyup', function () {
+			//     if ($(this).val() === $('#password').val()) {
+			//         $('#message').html('');
+			//         $('#signup #signUpSubmit').removeAttr('disabled');
+			        
+			//     } else{
+			//     	$('#message').html('Password does not match').css('color', 'red');
+			//     	$('#signup #signUpSubmit').attr('disabled','disabled');
+			//     } 
+			// });
+		</script>
+	</body>
+</html>
