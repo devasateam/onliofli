@@ -3,6 +3,8 @@ package controllers.account;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -106,8 +108,10 @@ public class Signup extends BaseApiController {
 
 		// Mail.Envelop envelop = new Mail.Envelop(subject, message,
 		// user.email);
-
-		Mail.sendMail(new MailContent());
+		List<String> emailList = new ArrayList<String>();
+		emailList.add(user.email);
+		MailContent content = new MailContent(subject, message, emailList,null, null, null);
+		Mail.sendMail(content);
 	}
 
 	/**
@@ -163,7 +167,9 @@ public class Signup extends BaseApiController {
 	private static void sendMailConfirmation(User user) throws EmailException {
 		String subject = Messages.get("mail.welcome.subject");
 		String message = Messages.get("mail.welcome.message");
-		Mail.Envelop envelop = new Mail.Envelop(subject, message, user.email);
-		Mail.sendMail(new MailContent());
+		List<String> emailList = new ArrayList<String>();
+		emailList.add(user.email);
+		MailContent content = new MailContent(subject, message, emailList,null, null, null);
+		Mail.sendMail(content);
 	}
 }

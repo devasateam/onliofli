@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 public class MailContent {
+
 	private String subject;
 	private String message;
 	private List<String> toEmails;
@@ -14,6 +15,18 @@ public class MailContent {
 	private List<ByteArrayOutputStream> attachments;
 	private String signature;
 	private Date creationTime = new Date();
+
+	public MailContent(String subject, String message, List<String> toEmails,
+			List<String> ccEmails, List<String> bccEmails,
+			List<ByteArrayOutputStream> attachments) {
+		super();
+		this.subject = subject;
+		this.message = message;
+		this.toEmails = toEmails;
+		this.ccEmails = ccEmails;
+		this.bccEmails = bccEmails;
+		this.attachments = attachments;
+	}
 
 	public String getSubject() {
 		return subject;

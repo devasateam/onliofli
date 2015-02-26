@@ -1,6 +1,7 @@
 package models.account.utils;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
@@ -27,38 +28,6 @@ public class Mail {
 	private static final int DELAY = 1;
 
 	/**
-	 * Envelop to prepare.
-	 */
-	public static class Envelop {
-		private String subject;
-		private String message;
-		private List<String> toEmails;
-
-		/**
-		 * Constructor of Envelop.
-		 * 
-		 * @param subject
-		 *            the subject
-		 * @param message
-		 *            a message
-		 * @param toEmails
-		 *            list of emails adress
-		 */
-		public Envelop(String subject, String message, List<String> toEmails) {
-			this.subject = subject;
-			this.message = message;
-			this.toEmails = toEmails;
-		}
-
-		public Envelop(String subject, String message, String email) {
-			this.message = message;
-			this.subject = subject;
-			this.toEmails = new ArrayList<String>();
-			this.toEmails.add(email);
-		}
-	}
-
-	/**
 	 * Send a email, using Akka to offload it to an actor.
 	 * 
 	 * @param envelop
@@ -82,6 +51,9 @@ public class Mail {
 		properties.put("mail.smtp.starttls.enable", enable);
 		properties.put("mail.smtp.host", host);
 		properties.put("mail.smtp.port", port);
+		List<String> toEmails = mailContent.getToEmails();
+		String readableMessage = mailContent.getMessage();
+		String subject = mailContent.getSubject();
 		Session session = Session.getInstance(properties,
 				new javax.mail.Authenticator() {
 					protected PasswordAuthentication getPasswordAuthentication() {
@@ -92,9 +64,12 @@ public class Mail {
 		try {
 			MimeMessage message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(from));
-			message.addRecipient(Message.RecipientType.TO, new InternetAddress());
-			message.setSubject("FROM PLAY SENDING MAIL");
-			message.setText("Hello there ");
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress(
+					toEmails.get(0)));
+			System.out.println(joinToString(toEmails, ","));
+			message.setSubject(subject);
+			message.setText(readableMessage);
+			message.setDescription(readableMessage);
 			Transport.send(message);
 			System.out.println("message sent successfully....");
 
@@ -103,8 +78,30 @@ public class Mail {
 		}
 	}
 
-	public void run() {
-		sendMail(new MailContent());
+	public static String joinToString(Collection<?> collection,
+			CharSequence separator) {
+
+		if (collection.isEmpty()) {
+			return "";
+		} else {
+			StringBuilder sepValueBuilder = new StringBuilder();
+
+			for (Object obj : collection) {
+				// Append the valuen and the separator even if it's the las
+				// element
+				sepValueBuilder.append(obj).append(separator);
+			}
+			// Remove the last separator
+			sepValueBuilder.setLength(sepValueBuilder.length()
+					- separator.length());
+
+			return sepValueBuilder.toString();
+
+		}
+	}
+
+	public void run(MailContent content) {
+		sendMail(content);
 		// MailerAPI email = play.Play.application()
 		// .plugin(MailerPlugin.class).email();
 		// final Configuration root = Configuration.root();

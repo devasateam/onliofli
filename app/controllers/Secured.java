@@ -5,7 +5,7 @@ import play.mvc.Result;
 import play.mvc.Security;
 
 /**
- * User: samir
+ * @author samir
  */
 public class Secured extends Security.Authenticator {
 
@@ -16,6 +16,6 @@ public class Secured extends Security.Authenticator {
 
     @Override
     public Result onUnauthorized(Http.Context ctx) {
-        return ok("unAuthorized");
+        return ok("unauthorized access","200");
     }
 }

@@ -2,6 +2,8 @@ package controllers.account;
 
 
 import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import models.Token;
@@ -90,8 +92,9 @@ public class Reset extends BaseApiController {
 		String subject = Messages.get("mail.reset.fail.subject");
 		String message = Messages.get("mail.reset.fail.message", email);
 
-		Mail.Envelop envelop = new Mail.Envelop(subject, message, email);
-		MailContent content = new MailContent();
+		List<String> emailList = new ArrayList<String>();
+		emailList.add(email);
+		MailContent content = new MailContent(subject, message, emailList,null, null, null);
 		Mail.sendMail(content);
 	}
 
@@ -180,9 +183,9 @@ public class Reset extends BaseApiController {
 	private static void sendPasswordChanged(User user) {
 		String subject = Messages.get("mail.reset.confirm.subject");
 		String message = Messages.get("mail.reset.confirm.message");
-		// Mail.Envelop envelop = new Mail.Envelop(subject, message,
-		// user.email);
-		MailContent content = new MailContent();
+		List<String> emailList = new ArrayList<String>();
+		emailList.add(user.email);
+		MailContent content = new MailContent(subject, message, emailList,null, null, null);
 		Mail.sendMail(content);
 	}
 }

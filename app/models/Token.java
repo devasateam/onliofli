@@ -2,14 +2,17 @@ package models;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 import javax.annotation.Nullable;
 import javax.persistence.Id;
 
 import models.account.utils.Mail;
+import models.account.utils.MailContent;
 import net.vz.mongodb.jackson.JacksonDBCollection;
 import net.vz.mongodb.jackson.ObjectId;
 import play.Configuration;
@@ -157,8 +160,10 @@ public class Token{
         }
 
         Logger.debug("sendMailResetLink: url = " + url);
-        Mail.Envelop envelop = new Mail.Envelop(subject, message, toMail);
-//        Mail.sendMail(envelop);
+        List<String> emailList = new ArrayList<String>();
+		emailList.add(user.email);
+		MailContent content = new MailContent(subject, message, emailList,null, null, null);
+		Mail.sendMail(content);
     }
     
     private void save(Token token){
