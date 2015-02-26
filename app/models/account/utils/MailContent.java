@@ -27,6 +27,13 @@ public class MailContent {
 		this.bccEmails = bccEmails;
 		this.attachments = attachments;
 	}
+	
+	public MailContent(String subject, String message, List<String> toEmails) {
+		super();
+		this.subject = subject;
+		this.message = message;
+		this.toEmails = toEmails;
+	}
 
 	public String getSubject() {
 		return subject;

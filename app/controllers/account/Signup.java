@@ -98,7 +98,6 @@ public class Signup extends BaseApiController {
 	private static void sendMailAskForConfirmation(User user)
 			throws EmailException, MalformedURLException {
 		String subject = Messages.get("mail.confirm.subject");
-
 		String urlString = "http://"
 				+ Configuration.root().getString("server.hostname");
 		urlString += "/confirm/" + user.confirmationToken;
@@ -110,7 +109,7 @@ public class Signup extends BaseApiController {
 		// user.email);
 		List<String> emailList = new ArrayList<String>();
 		emailList.add(user.email);
-		MailContent content = new MailContent(subject, message, emailList,null, null, null);
+		MailContent content = new MailContent(subject, message, emailList);
 		Mail.sendMail(content);
 	}
 
@@ -122,6 +121,7 @@ public class Signup extends BaseApiController {
 	 * @return Confirmationpage
 	 */
 	public static Result confirm(String token) {
+		Logger.info("----------------------------------token------------"+token);
 		User user = User.findByConfirmationToken(token);
 		if (user == null) {
 			flash("error", Messages.get("error.unknown.email"));

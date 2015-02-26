@@ -1,13 +1,18 @@
 package controllers;
 
 //import play.data.*;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
+import play.Logger;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
-import com.fasterxml.jackson.databind.node.ObjectNode;
-
 public class BaseApiController extends Controller {
+
+	public static Result index() {
+		return jsonResponse("success");
+	}
 
 	public static Result preflight(String path) {
 		response().setHeader("Access-Control-Allow-Origin", "*");
@@ -30,7 +35,8 @@ public class BaseApiController extends Controller {
 		ObjectNode result = Json.newObject();
 		result.put("status_code", code);
 		result.put("message", Json.toJson(obj));
-		return status(code, Json.toJson(obj));
+		return ok(result);
+		// return status(code, Json.toJson(obj));
 		// StringWriter w = new StringWriter();
 		// try {
 		// mapper.writeValue(w, obj);
@@ -49,6 +55,14 @@ public class BaseApiController extends Controller {
 		// response().setContentType("application/json");
 		//
 		// return status(code, w.toString());
+	}
+
+	public static Result jsonResponse(String data, String message, int code) {
+		ObjectNode result = Json.newObject();
+		result.put("status_code", code);
+		result.put("message", message);
+		result.put("data", data);
+		return ok(result);
 	}
 
 }

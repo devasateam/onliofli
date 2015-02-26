@@ -1,6 +1,5 @@
 package controllers.account;
 
-
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,23 +29,11 @@ import controllers.BaseApiController;
 public class Reset extends BaseApiController {
 
 	/**
-	 * Display the reset password form.
-	 * 
-	 * @return reset password form
-	 */
-	public static Result ask() {
-
-		return jsonResponse(Messages.get("ccount.settings.email.successful"),
-				200);
-	}
-
-	/**
 	 * Run ask password.
 	 * 
-	 * @return reset password form if error, runAsk render otherwise
+	 * @return reset password , runAsk render otherwise
 	 */
 	public static Result runAsk(String email1) {
-
 		if (email1 == null) {
 			flash("error", Messages.get("signup.valid.email"));
 			return jsonResponse(Messages.get("error.expiredmaillink"), 200);
@@ -94,7 +81,8 @@ public class Reset extends BaseApiController {
 
 		List<String> emailList = new ArrayList<String>();
 		emailList.add(email);
-		MailContent content = new MailContent(subject, message, emailList,null, null, null);
+		MailContent content = new MailContent(subject, message, emailList,
+				null, null, null);
 		Mail.sendMail(content);
 	}
 
@@ -128,10 +116,11 @@ public class Reset extends BaseApiController {
 	/**
 	 * @return reset password
 	 */
-	public static Result runReset() {
-		Map<String, String[]> parameters = request().body().asFormUrlEncoded();
-		String token = parameters.get("token")[0];
-		String password = parameters.get("password")[0];
+	public static Result runReset(String token, String password) {
+		// Map<String, String[]> parameters =
+		// request().body().asFormUrlEncoded();
+		// String token = parameters.get("token")[0];
+		// String password = parameters.get("password")[0];
 		if (token == null) {
 			flash("error", Messages.get("signup.valid.password"));
 			return jsonResponse(Messages.get("signup.valid.password"), 200);
@@ -185,7 +174,7 @@ public class Reset extends BaseApiController {
 		String message = Messages.get("mail.reset.confirm.message");
 		List<String> emailList = new ArrayList<String>();
 		emailList.add(user.email);
-		MailContent content = new MailContent(subject, message, emailList,null, null, null);
+		MailContent content = new MailContent(subject, message, emailList);
 		Mail.sendMail(content);
 	}
 }

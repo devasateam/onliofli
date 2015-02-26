@@ -61,8 +61,17 @@
 // 				          window.alert(status);
 // 			});
 			
+// 			$.ajax({
+// 				url : '/login?email=sam.su111nny001@gmail.com&password=sam',
+// 				method : 'POST',
+// 				success : function(response) {
+// 					window.location.href = response;
+// 				}
+// 			});
+
+			
 			$.ajax({
-				url : '/login?email=sam.su111nny001@gmail.com&password=sam',
+				url : '/askresetpassword?email=sam.sunny001@gmail.com',
 				method : 'POST',
 				success : function(response) {
 					window.location.href = response;

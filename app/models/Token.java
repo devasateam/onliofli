@@ -158,12 +158,12 @@ public class Token{
                 toMail = token.email; // == email parameter
                 break;
         }
-
+        
+        List<String>  mail = new ArrayList<String>();
+        mail.add(toMail);
         Logger.debug("sendMailResetLink: url = " + url);
-        List<String> emailList = new ArrayList<String>();
-		emailList.add(user.email);
-		MailContent content = new MailContent(subject, message, emailList,null, null, null);
-		Mail.sendMail(content);
+        MailContent content = new MailContent(subject, message, mail);
+        Mail.sendMail(content);
     }
     
     private void save(Token token){

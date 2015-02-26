@@ -113,7 +113,7 @@ public class User {
 	 * @return a user if the confirmation token is found, null otherwise.
 	 */
 	public static User findByConfirmationToken(String token) {
-		return User.userCollection.findOne(new BasicDBObject().append("token",
+		return User.userCollection.findOne(new BasicDBObject().append("confirmationToken",
 				token));
 	}
 
