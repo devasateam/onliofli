@@ -4,6 +4,7 @@ import java.util.List;
 
 import models.Attribute;
 import net.vz.mongodb.jackson.JacksonDBCollection;
+import net.vz.mongodb.jackson.WriteResult;
 import play.modules.mongodb.jackson.MongoDB;
 
 /**
@@ -17,8 +18,9 @@ public class AttributeDao {
 		return coll.find().toArray();
 	}
 
-	public static void create(Attribute attribute) {
-		coll.save(attribute);
+	public static Attribute create(Attribute attribute) {
+		WriteResult<Attribute, String> result= coll.save(attribute);
+		return result.getSavedObject();
 	}
 
 	public static void delete(String id) {

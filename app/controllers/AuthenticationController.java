@@ -1,15 +1,12 @@
 package controllers;
 
-import com.accounts.service.AuthenticationService;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-
-import models.User;
 import models.account.utils.AppException;
-import play.i18n.Messages;
-import play.mvc.Controller;
 import play.libs.Json;
+import play.mvc.Controller;
 import play.mvc.Result;
+
+import com.accounts.service.AuthenticationService;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 /**
  * @Author Pramod Email:sendpramod@gmail.com
  */
