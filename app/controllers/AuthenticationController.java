@@ -5,7 +5,8 @@ import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
-import com.account.services.AuthenticationService;
+import com.accounts.service.AuthenticationService;
+import com.accounts.service.impl.AuthenticationServiceImpl;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 /**
  * @Author Pramod Email:sendpramod@gmail.com
@@ -16,7 +17,7 @@ public class AuthenticationController extends Controller {
 			throws AppException {
 		ObjectNode result = Json.newObject();
 
-		AuthenticationService authenticationService = new AuthenticationService();
+		AuthenticationService authenticationService = new AuthenticationServiceImpl();
 		return ok(result.put("message",
 				authenticationService.authenticateUser(email, password)));
 	}

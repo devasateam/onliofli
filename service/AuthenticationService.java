@@ -1,11 +1,8 @@
-package com.account.services;
-
+package com.accounts.service;
 
 import models.User;
 import models.account.utils.AppException;
 import play.i18n.Messages;
-
-import com.onliofli.utils.UrlConstants;
 
 /**
 
@@ -21,7 +18,7 @@ public class AuthenticationService {
         } else if (!user.validated) {
             return Messages.get("account.not.validated.check.mail");
         }
-        return UrlConstants.DASH_BOARD;
+        return "error";
     }
 }
 

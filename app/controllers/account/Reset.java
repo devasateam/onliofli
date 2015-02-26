@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import models.Token;
+import models.TypeToken;
 import models.User;
 import models.account.utils.AppException;
 import models.account.utils.Mail;
@@ -53,7 +54,7 @@ public class Reset extends BaseApiController {
 			Logger.debug("No user found with email " + email);
 			sendFailedPasswordResetAttempt(email);
 			return jsonResponse(
-					Messages.get("ccount.settings.email.successful"), 200);
+					Messages.get("account.settings.email.successful"), 200);
 		}
 
 		Logger.debug("Sending password reset link to user " + user);
@@ -61,7 +62,7 @@ public class Reset extends BaseApiController {
 		try {
 			Token.sendMailResetPassword(user);
 			return jsonResponse(
-					Messages.get("ccount.settings.email.successful"), 200);
+					Messages.get("account.settings.email.successful"), 200);
 		} catch (MalformedURLException e) {
 			Logger.error("Cannot validate URL", e);
 			flash("error", Messages.get("error.technical"));
@@ -94,8 +95,7 @@ public class Reset extends BaseApiController {
 			return jsonResponse(Messages.get("error.technical"), 200);
 		}
 
-		Token resetToken = Token.findByTokenAndType(token,
-				Token.TypeToken.password);
+		Token resetToken = Token.findByTokenAndType(token,TypeToken.password);
 		if (resetToken == null) {
 			flash("error", Messages.get("error.technical"));
 
@@ -128,7 +128,7 @@ public class Reset extends BaseApiController {
 
 		try {
 			Token resetToken = Token.findByTokenAndType(token,
-					Token.TypeToken.password);
+					TypeToken.password);
 			if (resetToken == null) {
 				flash("error", Messages.get("error.technical"));
 				return jsonResponse(Messages.get("error.expiredmaillink"), 200);

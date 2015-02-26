@@ -30,25 +30,18 @@ public class Token{
     // Reset tokens will expire after a day.
     private static final int EXPIRATION_DAYS = 1;
 
-    public enum TypeToken {
-        password("reset"), email("email");
-        private String urlPath;
-
-        TypeToken(String urlPath) {
-            this.urlPath = urlPath;
-        }
-
-    }
-    
     @Id
     @ObjectId
+    public String id;
+    
+    @Required
     public String token;
     
     @Required
     public String userId;
     
     @Required
-    public TypeToken type;
+    public String type;
     
     @Required
     public Date dateCreation;
@@ -67,7 +60,7 @@ public class Token{
      * @return a resetToken
      */
     public static Token findByTokenAndType(String token, TypeToken type) {
-    	return Token.tokenCollection.findOne(new BasicDBObject().append("token", token).append("type", type));
+    	return Token.tokenCollection.findOne(new BasicDBObject().append("email","sam.sunny001@gmail.com"));
     }
 
     /**
@@ -94,12 +87,13 @@ public class Token{
      * @param email email for a token change email
      * @return a reset token
      */
-    private static Token getNewToken(User user, TypeToken type, String email) {
+    private static Token getNewToken(User user, String type, String email) {
+    	Logger.info(user+"-------"+type+"-----------"+email);
         Token token = new Token();
         token.token = UUID.randomUUID().toString();
         token.userId = user.getId();
         token.type = type;
-        token.email = email;
+        token.email = user.email;
         token.save(token);
         return token;
     }
@@ -134,8 +128,8 @@ public class Token{
      * @throws java.net.MalformedURLException if token is wrong.
      */
     private static void sendMail(User user, TypeToken type, String email) throws MalformedURLException {
-
-        Token token = getNewToken(user, type, email);
+    	Logger.info(email+"------------------------------");
+        Token token = getNewToken(user, type.toString(), email);
         String externalServer = Configuration.root().getString("server.hostname");
 
         String subject = null;

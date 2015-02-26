@@ -7,7 +7,8 @@ import play.i18n.Messages;
 import play.libs.Json;
 import play.mvc.Result;
 
-import com.account.services.AuthenticationService;
+import com.accounts.service.AuthenticationService;
+import com.accounts.service.impl.AuthenticationServiceImpl;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.onliofli.utils.UrlConstants;
 
@@ -16,6 +17,7 @@ import com.onliofli.utils.UrlConstants;
  * 
  * @author samir
  */
+
 public class Application extends BaseApiController {
 
 	public static Result GO_HOME = redirect(UrlConstants.HOME);
@@ -56,7 +58,7 @@ public class Application extends BaseApiController {
 		// String email = parameters.get("email")[0];
 		// String password = parameters.get("password")[0];
 		ObjectNode result = Json.newObject();
-		AuthenticationService authenticationService = new AuthenticationService();
+		AuthenticationService authenticationService = new AuthenticationServiceImpl();
 		if (email == null || password == null) {
 			return ok(result.put("message",
 					authenticationService.authenticateUser(email, password)));

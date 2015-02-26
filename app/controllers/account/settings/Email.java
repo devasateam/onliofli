@@ -4,6 +4,7 @@ package controllers.account.settings;
 import java.net.MalformedURLException;
 
 import models.Token;
+import models.TypeToken;
 import models.User;
 import play.Logger;
 import play.i18n.Messages;
@@ -63,7 +64,7 @@ public class Email extends BaseApiController {
 		}
 
 		Token resetToken = Token.findByTokenAndType(token,
-				Token.TypeToken.email);
+				TypeToken.email);
 		if (resetToken == null) {
 			flash("error", Messages.get("error.technical"));
 			return jsonResponse(Messages.get("error.technical"), 200);

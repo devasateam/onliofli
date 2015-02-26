@@ -31,5 +31,11 @@ POST    /askresetpassword			            controllers.account.Reset.runAsk(email:S
 #After Registration Validation confirmation link sent to the user
 GET     /email/:token               controllers.account.settings.Email.validateEmail(token:String)
 
+#Get all List of Brands
+GET    	/attributes                	controllers.AttributeController.getAttributes()
+
+#Add Brand providing all the params
+POST    /addattribute			               controllers.AttributeController.saveAttribute(name:String, desc:String)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /*file               controllers.Assets.at(path="/public", file)
