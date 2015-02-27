@@ -9,14 +9,14 @@ import play.Logger;
 import play.i18n.Messages;
 import play.mvc.Result;
 import play.mvc.Security;
-import controllers.BaseApiController;
+import controllers.Application;
 import controllers.Secured;
 
 /**
  * @author samir
  */
 @Security.Authenticated(Secured.class)
-public class Password extends BaseApiController {
+public class Password extends Application {
 
 
     /**

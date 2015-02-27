@@ -10,7 +10,7 @@ import play.Logger;
 import play.i18n.Messages;
 import play.mvc.Result;
 import play.mvc.Security;
-import controllers.BaseApiController;
+import controllers.Application;
 import controllers.Secured;
 
 /**
@@ -19,7 +19,7 @@ import controllers.Secured;
  * @author samir
  */
 @Security.Authenticated(Secured.class)
-public class Email extends BaseApiController {
+public class Email extends Application {
 
 	/**
 	 * Password Page. Ask the user to change his password.

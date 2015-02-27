@@ -5,7 +5,7 @@ import play.Logger;
 import play.data.Form;
 import play.mvc.Result;
 
-public class ProductController extends BaseApiController{
+public class ProductController extends Application{
 
 	public static Result getProducts(){
 		Logger.info("Getting products");

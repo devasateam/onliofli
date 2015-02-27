@@ -6,13 +6,10 @@
 GET     /     						controllers.Assets.at(path="/public", file="signin.html")
 
 #Login page will return you Dash Board Json if Success else status code and message
-POST    /login                      controllers.Application.authenticate(email:String,password:String)
+POST    /login                      controllers.AuthenticationController.authenticate(email:String,password:String)
 
 #Logout will simply Clear the session and returns a message
-GET     /logout                     controllers.Application.logout()
-
-#Dashboard page 
-GET     /dashboard/:accountId       controllers.Application.getDashBoard(accountId:String)
+GET     /logout                     controllers.AuthenticationController.logout()
 
 # Registers the user, sending an email to confirm the account.
 POST    /signup                     controllers.account.Signup.save(name:String,email:String,password:String)

@@ -34,8 +34,6 @@ public class User {
 	@Required
 	public String passwordHash;
 
-	public Long dateCreated;
-
 	public boolean validated;
 
 	public static JacksonDBCollection<User, String> userCollection = MongoDB
@@ -85,13 +83,6 @@ public class User {
 		this.passwordHash = passwordHash;
 	}
 
-	public Long getDateCreated() {
-		return dateCreated;
-	}
-
-	public void setDateCreated(Long dateCreated) {
-		this.dateCreated = dateCreated;
-	}
 
 	/**
 	 * Retrieve a user from a fullname.

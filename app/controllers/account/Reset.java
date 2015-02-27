@@ -17,7 +17,7 @@ import org.apache.commons.mail.EmailException;
 import play.Logger;
 import play.i18n.Messages;
 import play.mvc.Result;
-import controllers.BaseApiController;
+import controllers.Application;
 
 /**
  * Token password : - ask for an email address. - send a link pointing them to a
@@ -27,7 +27,7 @@ import controllers.BaseApiController;
  * 
  * @author samir
  */
-public class Reset extends BaseApiController {
+public class Reset extends Application {
 
 	/**
 	 * Run ask password.

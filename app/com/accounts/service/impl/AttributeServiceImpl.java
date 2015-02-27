@@ -7,7 +7,8 @@ import models.Attribute;
 import com.accounts.service.AttributeService;
 import com.ecommerce.model.dao.AttributeDao;
 
-public class AttributeServiceImpl implements AttributeService {
+public class AttributeServiceImpl implements
+		AttributeService {
 
 	@Override
 	public Attribute saveAttribute(Attribute attribute) {

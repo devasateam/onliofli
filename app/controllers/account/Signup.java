@@ -5,21 +5,21 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
-
-import org.apache.commons.mail.EmailException;
 
 import models.User;
 import models.account.utils.AppException;
 import models.account.utils.Hash;
 import models.account.utils.Mail;
 import models.account.utils.MailContent;
+
+import org.apache.commons.mail.EmailException;
+
 import play.Configuration;
 import play.Logger;
 import play.i18n.Messages;
 import play.mvc.Result;
-import controllers.BaseApiController;
+import controllers.Application;
 
 /**
  * Signup to onliofli : save and send confirm mail.
@@ -27,7 +27,7 @@ import controllers.BaseApiController;
  * 
  * @author samir
  */
-public class Signup extends BaseApiController {
+public class Signup extends Application {
 
 	/**
 	 * Save the new user.
