@@ -22,7 +22,7 @@ POST    /reset			            controllers.account.Reset.runReset(token:String,pas
 
 # Resets the password using the email.
 GET     /reset/:token               controllers.account.Reset.reset(token:String)
-POST    /askresetpassword			            controllers.account.Reset.runAsk(email:String)
+POST    /askresetpassword		 controllers.account.Reset.runAsk(email:String)
 
 
 #After Registration Validation confirmation link sent to the user

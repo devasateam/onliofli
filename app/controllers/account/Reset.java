@@ -1,5 +1,6 @@
 package controllers.account;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +38,7 @@ public class Reset extends Application {
 	public static Result runAsk(String email1) {
 		if (email1 == null) {
 			flash("error", Messages.get("signup.valid.email"));
-			return jsonResponse(Messages.get("error.expiredmaillink"), 200);
+			return jsonResponse(Messages.get("error.expiredmaillink"), 400);
 		}
 
 		final String email = email1;
@@ -87,7 +88,7 @@ public class Reset extends Application {
 		Mail.sendMail(content);
 	}
 
-	public static Result reset(String token) {
+	public static Result reset(String token) throws IOException {
 
 		if (token == null) {
 			flash("error", Messages.get("error.technical"));
@@ -115,8 +116,9 @@ public class Reset extends Application {
 
 	/**
 	 * @return reset password
+	 * @throws IOException 
 	 */
-	public static Result runReset(String token, String password) {
+	public static Result runReset(String token, String password) throws IOException {
 		// Map<String, String[]> parameters =
 		// request().body().asFormUrlEncoded();
 		// String token = parameters.get("token")[0];

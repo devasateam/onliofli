@@ -1,6 +1,7 @@
 package controllers.account.settings;
 
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import models.Token;
@@ -54,8 +55,9 @@ public class Email extends Application {
 	 * Validate a email.
 	 * 
 	 * @return email page with flash error or success
+	 * @throws IOException 
 	 */
-	public static Result validateEmail(String token) {
+	public static Result validateEmail(String token) throws IOException {
 		User user = User.findByEmail(request().username());
 
 		if (token == null) {

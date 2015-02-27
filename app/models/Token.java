@@ -1,5 +1,6 @@
 package models;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -62,9 +63,9 @@ public class Token {
 	 *            type of token
 	 * @return a resetToken
 	 */
-	public static Token findByTokenAndType(String token, TypeToken type) {
+	public static Token findByTokenAndType(String token, TypeToken type) throws IOException {
 		return Token.tokenCollection.findOne(new BasicDBObject().append(
-				"token", token).append("type", type));
+				"token", token).append("type", type.toString()));
 	}
 
 	/**
